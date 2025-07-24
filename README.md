@@ -14,7 +14,9 @@ Whether it’s jury panel logistics or civil grand jury communications, I’m bu
 - 🧾 Civil Grand Jury Mail Merge Macro — Word macro automation for personalized court documents *(upload in progress)*
 - 🧹 Shared Drive Cleanup Strategy — structured approach for SharePoint migration and retention planning
 ---
-📍California | ✉️ lashara.cordero@calbrightcollege.org 
+📍California | ✉️ lashara.cordero@calbrightcollege.org
 🖋️ *Supernote love, always*
+---
+🖋️ [Beyond the Docket](https://sites.google.com/view/beyondthedocket/home) 🏀 [Forum Files](https://theforumfiles.substack.com/) 
+🧪 [Kaggle](https://www.kaggle.com/earlgreyhot) | 📂 [GitHub Projects](https://github.com/earlgreyhot1701D) 
 
-[Visit my site → Beyond the Docket](https://sites.google.com/view/beyondthedocket/home)
