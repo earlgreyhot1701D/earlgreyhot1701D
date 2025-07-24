@@ -11,7 +11,7 @@ Whether it’s jury panel logistics or civil grand jury communications, I’m bu
 🛠️ **Featured Projects**
 - 📂 [The Forum Files](https://theforumfiles.substack.com/) — NBA storytelling meets data analysis
 - 🏀 [Bench Power: Lakers Analysis](https://github.com/earlgreyhot1701D/bench-power-lakers) — Data storytelling project from the Google Data Analytics capstone. Uses visual analysis to highlight bench impact in key game moments.
-- 🧠 *A Treatise in One Night* — technical field notes from my AI learning journey *(coming soon to GitHub)*
+- 🧠 [**A Treatise in One Night**](https://github.com/earlgreyhot1701D/a-treatise-in-one-night)  Observations from the edge of understanding: AI, cognition, and 2:00 a.m. clarity.
 - 🧾 Civil Grand Jury Mail Merge Macro — Word macro automation for personalized court documents *(upload in progress)*
 - 🧹 Shared Drive Cleanup Strategy — structured approach for SharePoint migration and retention planning
 ---
