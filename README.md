@@ -18,7 +18,7 @@ Whether it’s jury panel logistics or civil grand jury communications, I’m bu
 - 🧠 [**A Treatise in One Night**](https://github.com/earlgreyhot1701D/a-treatise-in-one-night)  Observations from the edge of understanding: AI, cognition, and 2:00 a.m. clarity.
 - 🧾 Civil Grand Jury Mail Merge Macro — Word macro automation for personalized court documents *(upload in progress)*
 - 🧹 Shared Drive Cleanup Strategy — structured approach for SharePoint migration and retention planning
-- 
+
 ---
 
 📍California | ✉️ lashara.cordero@calbrightcollege.org
