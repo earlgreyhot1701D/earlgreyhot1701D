@@ -21,6 +21,19 @@ Whether it’s jury panel logistics or civil grand jury communications, I’m bu
 
 ---
 
+## 🧠 Project Highlight: Bedrock Chatbot (AI Camp Prep)
+
+Built and deployed a working conversational AI chatbot using [Amazon Bedrock](https://aws.amazon.com/bedrock/) and [Streamlit](https://streamlit.io/) as part of my CCC AI Summer Camp preparation.
+
+The app uses Claude 3 Sonnet to answer plain-language questions about California jury duty, showcasing how generative AI can support public understanding of government services.
+
+🔗 [View the project repo](https://github.com/earlgreyhot1701D/aws-bedrock-streamlit-chat) 
+
+**Original Repo Credit:**  
+[https://github.com/RyanGertz/aws-bedrock-streamlit-chat](https://github.com/RyanGertz/aws-bedrock-streamlit-chat)
+
+---
+
 📍California | ✉️ lashara.cordero@calbrightcollege.org
 🖋️ *Supernote love, always*
 
