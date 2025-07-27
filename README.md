@@ -16,7 +16,7 @@ A prototype AI chatbot that answers jury service questions using California Code
 Built with Amazon Bedrock (Claude 3) and a RAG-style architecture.  
 
 🧠 Use case: Civic/legal operations  
-🔗 ***COMING SOON** Demo (Loom): [Watch the demo](https://loom.com/YOUR_LINK_HERE)  
+🔗 Demo (Loom): [Watch the demo](https://www.loom.com/share/189bf95c6e8643da9188f85413daf56f?sid=634f2e81-8ac8-4328-8a54-9524c1a4231a)  
 📁 Repo: [Your Honor, I Object (to Jury Duty) – v9](https://github.com/earlgreyhot1701D/your-honor-i-object-to-jury-duty-v9)  
 🛠️ Status: Prototype (v9) – Created for CCC AI Summer Camp
 
