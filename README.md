@@ -14,16 +14,21 @@ I work at the intersection of government systems, data, and emerging technologie
 
 ---
 
-🧪 FEATURED HACKATHON · ARIADNE CLEW  
+🧶 FEATURED HACKATHON · ARIADNE CLEW
 
-**Built for the 2025 SuperHack, hosted by SuperOps + AWS**  
-A lightweight agent orchestration prototype designed to handle IT tickets and trace agent chains through an explainable AI interface.
+**Reasoning Preservation for LLM-Native Builders**  
+**Building for AWS AI Agent Global Hackathon · AWS AgentCore + Claude Sonnet**
 
-- 🧠 Claude 3.5 · React Frontend · Memory injection chain  
-- 🧵 Supports fast debugging, code history review, and prompt chain transparency  
-- 📂 [Repo](https://github.com/earlgreyhot1701D/Ariadne-Clew)  
+You build fast. You iterate messy. You lose track of why you made choices.  
+Ariadne Clew is a reasoning agent that captures your messy chat sessions and turns them into structured clarity — preserving the **aha moments**, **design tradeoffs**, and **code decisions** that disappear when you move too fast for version control.
 
-🏁 Built in under 72 hours. Built clean. More to come!
+- 🧠 Powered by AWS AgentCore and Bedrock  
+- 🧾 Produces structured recaps from raw Claude or ChatGPT transcripts  
+- 💡 Designed for indie operators who hate losing context mid-build  
+- 📂 [Repo](https://github.com/earlgreyhot1701D/Ariadne-Clew)
+
+🧵 In Greek mythology, Ariadne gave Theseus a clew — a thread to escape the labyrinth.  
+Ariadne Clew does the same for LLM-native builders: capturing the **why** behind each decision before it disappears into the maze.
 
 ---
 
