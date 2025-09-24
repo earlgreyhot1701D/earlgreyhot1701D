@@ -2,7 +2,7 @@
 
 **Civic Technologist** · [CCC AI Summer Camp 2025](https://dxhub.calpoly.edu/ccc-ai-summer-camp/)
 
-**Creator of [Beyond the Docket](https://sites.google.com/view/beyondthedocket/home)**  
+**Creator of [Threadkeeper](https://threadkeeper.io) and [Beyond the Docket](https://sites.google.com/view/beyonddocket/home)**  
 
 Exploring AI for public systems · Jury Ops × Automation · Always learning
 
@@ -14,16 +14,16 @@ I work at the intersection of government systems, data, and emerging technologie
 
 ---
 
-🌶️🚀 FEATURED PROJECT · PROOF OF SCOVILLE  
+🧪 FEATURED HACKATHON · ARIADNE CLEW  
 
-**Mobile prototype built with Xion’s DAVE SDK for the [Proof of Concept 2025 Hackathon](https://proofofconcept.devpost.com/), a six-week virtual competition powered by XION's Dave SDK and zkTLS tools.**  
-Tracks and verifies spicy condiments, from salsa macha to chili crisps, with a playful but technical Spice Lab UI.  
+**Built for the 2025 SuperHack, hosted by SuperOps + AWS**  
+A lightweight agent orchestration prototype designed to handle IT tickets and trace agent chains through an explainable AI interface.
 
-- 🧩 Core features: on-chain write, URL verification, heat meter visualization  
-- 🎥 [Watch the demo](https://www.youtube.com/shorts/etYvSHW92t0)  
-- 📂 [View the repo](https://github.com/earlgreyhot1701D/proof-of-scoville)
+- 🧠 Claude 3.5 · React Frontend · Memory injection chain  
+- 🧵 Supports fast debugging, code history review, and prompt chain transparency  
+- 📂 [Repo](https://github.com/earlgreyhot1701D/Ariadne-Clew)  
 
-Built transparently with [CCC AI Summer Camp 2025](https://dxhub.calpoly.edu/ccc-ai-summer-camp/) momentum, vibe-coded with ChatGPT 4.0 as collaborator. 
+🏁 Built in under 72 hours. Built clean. More to come!
 
 ---
 
@@ -32,6 +32,7 @@ Built transparently with [CCC AI Summer Camp 2025](https://dxhub.calpoly.edu/ccc
 **Jury Eligibility Chatbot**  
 Prototype chatbot answering jury service questions using the California Code of Civil Procedure and Court Rules.  
 Built with Amazon Bedrock (Claude 3) and a RAG-style architecture.  
+
 - 🧠 Use case: Civic/legal operations  
 - 🔗 [Repo: *Your Honor, I Object (to Jury Duty)* – v9](https://github.com/earlgreyhot1701D/jury-chatbot)  
 - 📺 [Demo (Loom)](https://www.loom.com/share/189bf95c6e8643da9188f85413daf56f?sid=634f2e81-8ac8-4328-8a54-9524c1a4231a)  
@@ -42,6 +43,29 @@ Python ETL + reporting pipeline analyzing 11 years of jury utilization data.
 - 🛠️ Scripts: `juror_structure.py`, `juror_clean.py`, `juror_etl.py`  
 - 📊 Benchmarks jury usage against NCSC standards  
 - 📂 [Repo](https://github.com/earlgreyhot1701D/12-angry-rows)  
+
+**Write of Access**  
+OCR + document extraction prototype using AWS Textract  
+- 📑 Extracts typed and handwritten content from public court forms  
+- 💬 Includes analysis of Textract limitations with checkboxes and freeform fields  
+- 📂 [Repo](https://github.com/earlgreyhot1701D/write-of-access)
+
+**Hung Jury**  
+When automation can’t reach a verdict.
+
+This repo documents a scrubbed proof-of-concept exploring whether the Judicial Council of California’s Annual Jury Data Report (JDR) could be automated.  
+
+- 🧪 Tested PDF extraction from Crystal Reports  
+- 🗂️ Built `lean_jdr.py` to apply all 12 JCC Manual rules  
+- 🧾 Concluded Excel was already validating correctly  
+- 📂 [Repo](https://github.com/earlgreyhot1701D/hung-jury)
+
+🧠 What I Learned:  
+- Source data quality is the real blocker — Crystal scrambled outputs  
+- Python worked, but automation failed due to flawed PDFs  
+- Knowing when to stop matters. This project was closed by Monday, with lessons intact  
+
+Includes synthetic sample data, launch log, and script stubs (structure preserved, logic redacted). Developed with ChatGPT as build partner.
 
 ---
 
@@ -83,17 +107,18 @@ Gamified typing practice app designed to build foundational digital literacy ski
 ---
 
 📌 Currently Working On  
-- Iterating **Jury Eligibility Chatbot v10** (semantic search, exception handling, memory).  
-- Expanding **Proof of Scoville** with zkTLS verification.  
-- Building **ThreadKeeper** MVP in Lovable.  
-- Adding adaptive learning features to **Office Keys**.  
+- Iterating and expanding **Ariadne Clew** — my primary project, focused on explainable agent chains and traceable memory.  
+- Building **Jury Eligibility Chatbot v10** (semantic search, exception handling, memory).  
+- Extending **Proof of Scoville** with zkTLS verification and UX polish.  
+- Developing **ThreadKeeper** MVP in Lovable for AI project memory.  
+- Enhancing **Office Keys** with adaptive learning features for digital literacy. 
 
 ---
 
-📍 California |  ✉️ lashara.cordero@calbrightcollege.org
-🖋️ *Supernote love, always*
+📍 California |  ✉️ lashara.cordero@calbrightcollege.org  
+🖋️ *Supernote love, always*  
 
 ---
 
-🖋️ [Beyond the Docket](https://sites.google.com/view/beyond-the-docket) · 🏀 [Forum Files](https://theforumfiles.substack.com/) · 🧪 [Kaggle](https://www.kaggle.com/) · 📂 [GitHub Projects](https://github.com/earlgreyhot1701D)  
+🧵 [ThreadKeeper](https://www.threadkeeper.io) 🖋️ [Beyond the Docket](https://sites.google.com/view/beyond-the-docket) · 🏀 [Forum Files](https://theforumfiles.substack.com/) · 🧪 [Kaggle](https://www.kaggle.com/) · 📂 [GitHub Projects](https://github.com/earlgreyhot1701D)
 
