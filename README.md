@@ -1,3 +1,5 @@
+![earlgreyhot1701D's GitHub Banner](https://raw.githubusercontent.com/earlgreyhot1701D/earlgreyhot1701D/main/banner.png)
+
 # 👋 Hello, I'm L. Cordero
 
 **Civic Technologist** · [CCC AI Summer Camp 2025](https://dxhub.calpoly.edu/ccc-ai-summer-camp/)
