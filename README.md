@@ -1,124 +1,209 @@
-# 👋 Hello, I'm L. Cordero
+# 👋 Hello, I'm L. Shara Cordero
+Civic Technologist · Full-Stack AI Engineer · CCC AI Summer Camp 2025
 
-**Civic Technologist** · [CCC AI Summer Camp 2025](https://dxhub.calpoly.edu/ccc-ai-summer-camp/)
+Creator of Janus Clew, Ariadne Clew, and Beyond the Docket
 
-**Creator of [Threadkeeper](https://threadkeeper.io) and [Beyond the Docket](https://sites.google.com/view/beyonddocket/home)**  
-
-Exploring AI for public systems · Jury Ops × Automation · Always learning
-
----
-
-🧭 What I’m About  
-
-I work at the intersection of government systems, data, and emerging technologies; exploring how applied AI can support real people in real institutions. Whether it’s jury panel logistics or digital literacy tools, I’m building the skills to automate workflows, structure knowledge, and communicate complex ideas with clarity and care.  
+Exploring AI for public systems · Developer Growth Tracking · Civic Automation · Always learning
 
 ---
 
-🧶 FEATURED HACKATHON · ARIADNE CLEW
+## 🧭 What I'm About
 
-**Reasoning Preservation for LLM-Native Builders**  
-**Building for AWS AI Agent Global Hackathon · AWS AgentCore + Claude Sonnet**
-
-You build fast. You iterate messy. You lose track of why you made choices.  
-Ariadne Clew is a reasoning agent that captures your messy chat sessions and turns them into structured clarity — preserving the **aha moments**, **design tradeoffs**, and **code decisions** that disappear when you move too fast for version control.
-
-- 🧠 Powered by AWS AgentCore and Bedrock  
-- 🧾 Produces structured recaps from raw Claude or ChatGPT transcripts  
-- 💡 Designed for indie operators who hate losing context mid-build  
-- 📂 [Repo](https://github.com/earlgreyhot1701D/Ariadne-Clew)
-
-🧵 In Greek mythology, Ariadne gave Theseus a clew — a thread to escape the labyrinth.  
-Ariadne Clew does the same for LLM-native builders: capturing the **why** behind each decision before it disappears into the maze.
+I work at the intersection of government systems, developer workflows, and emerging AI. I build full-stack systems that make invisible things visible—whether it's developer growth, legal processes, or civic workflows. Nine years in judicial operations taught me how real systems fail. Now I'm building tools to fix them.
 
 ---
 
-⚖️ Civic & Legal AI Projects  
+## 🚀 FEATURED PROJECT · JANUS CLEW
 
-**Jury Eligibility Chatbot**  
-Prototype chatbot answering jury service questions using the California Code of Civil Procedure and Court Rules.  
-Built with Amazon Bedrock (Claude 3) and a RAG-style architecture.  
+**Evidence-Backed Developer Growth Tracking**
 
-- 🧠 Use case: Civic/legal operations  
-- 🔗 [Repo: *Your Honor, I Object (to Jury Duty)* – v9](https://github.com/earlgreyhot1701D/jury-chatbot)  
-- 📺 [Demo (Loom)](https://www.loom.com/share/189bf95c6e8643da9188f85413daf56f?sid=634f2e81-8ac8-4328-8a54-9524c1a4231a)  
-- 🛠️ Status: Prototype (v9)
+Building for AWS Global Vibe Hackathon 2025 · AWS AgentCore + FastAPI + React
 
-**12 Angry Rows**  
-Python ETL + reporting pipeline analyzing 11 years of jury utilization data.  
-- 🛠️ Scripts: `juror_structure.py`, `juror_clean.py`, `juror_etl.py`  
-- 📊 Benchmarks jury usage against NCSC standards  
-- 📂 [Repo](https://github.com/earlgreyhot1701D/12-angry-rows)  
+You ship projects. You grow. But growth is invisible—until now.
 
-**Write of Access**  
-OCR + document extraction prototype using AWS Textract  
-- 📑 Extracts typed and handwritten content from public court forms  
-- 💬 Includes analysis of Textract limitations with checkboxes and freeform fields  
-- 📂 [Repo](https://github.com/earlgreyhot1701D/write-of-access)
+Janus Clew reads your actual code, measures complexity objectively, detects what you're learning, and exports proof you can share.
 
-**Hung Jury**  
-When automation can’t reach a verdict.
+**Phase 1 shipped:** CLI analyzer + FastAPI backend + React dashboard
+- Timeline visualization of growth across projects
+- Skills detected with evidence links to your actual code
+- Complexity breakdown showing exactly how the score was calculated
+- Shareable export (LinkedIn-ready, interview-proof)
 
-This repo documents a scrubbed proof-of-concept exploring whether the Judicial Council of California’s Annual Jury Data Report (JDR) could be automated.  
+**Phase 2 complete:** Pattern detection + AWS AgentCore integration
+- Detects your development signature (database avoidance, async-first, etc.)
+- AI-powered forward-looking recommendations ("you're ready for PostgreSQL")
+- Growth trajectory analysis with confidence levels
 
-- 🧪 Tested PDF extraction from Crystal Reports  
-- 🗂️ Built `lean_jdr.py` to apply all 12 JCC Manual rules  
-- 🧾 Concluded Excel was already validating correctly  
-- 📂 [Repo](https://github.com/earlgreyhot1701D/hung-jury)
+Built for indie operators and solo developers who move fast and need proof, not vibes. Local-first, privacy-focused.
 
-🧠 What I Learned:  
-- Source data quality is the real blocker — Crystal scrambled outputs  
-- Python worked, but automation failed due to flawed PDFs  
-- Knowing when to stop matters. This project was closed by Monday, with lessons intact  
-
-Includes synthetic sample data, launch log, and script stubs (structure preserved, logic redacted). Developed with ChatGPT as build partner.
+🧠 Full-stack: CLI + FastAPI + React + AWS AgentCore  
+📊 Real problem: Growth is invisible  
+💡 Real solution: Evidence-backed proof  
+📂 [Repo](https://github.com/earlgreyhot1701D/janus-clew)
 
 ---
 
-🧪 Hackathon & Prototype Projects  
+## 🧶 ARIADNE CLEW
 
-**ThreadKeeper**  
-Soft version control + project memory for vibecoders.  
-- Save snapshots, insights, and “a-ha” moments across AI coding projects  
-- Export markdown project logs and working code states  
-- 📂 [Repo](https://github.com/earlgreyhot1701D/threadkeeper)  
+**Reasoning Preservation for LLM-Native Builders**
 
----
+AWS AgentCore + Claude Sonnet 4 + Bedrock
 
-📊 Analytics & Storytelling  
+You build fast. You iterate messy. You lose track of why you made choices.
 
-**The Forum Files**  
-NBA storytelling meets data analysis, with a focus on the Los Angeles Lakers.  
-- 🏀 [Substack](https://theforumfiles.substack.com/)  
+Ariadne Clew is an autonomous reasoning agent that captures your messy chat sessions and turns them into structured clarity—preserving the aha moments, design tradeoffs, and code decisions that disappear when you move too fast for version control.
 
-**Bench Power: Lakers Analysis**  
-Capstone project (Google Data Analytics Certificate).  
-- Uses visual storytelling to highlight bench impact in key game moments  
-- 📂 [Kaggle Project](https://www.kaggle.com/)  
+**What it does:**
+- Upload any LLM chat transcript (ChatGPT, Claude, DeepSeek, etc.)
+- Agent autonomously extracts: aha moments, MVP changes, scope creep, README notes, post-MVP ideas
+- Produces dual output: human-readable recap + structured JSON
+- Session persisted for historical reference
 
-**A Treatise in One Night**  
-Late-night reflections blending technical notes (inference, embeddings, transformers) with personal insight.  
-- Part of my CCC AI Summer Camp blog: *Beyond the Docket*  
+**Why it matters:**
+- 73% of developers use AI coding tools daily, but 0% preserve structured reasoning
+- Designed for indie operators who hate losing context mid-build
+- Production-grade security: PII scrubbing, deny-list filtering, size enforcement
+- Real AWS AgentCore integration (not mocked)
 
----
-
-⌨️ Learning Tools & Passion Projects  
-
-**Office Keys / Type Speed Boost**  
-Gamified typing practice app designed to build foundational digital literacy skills.  
-- Developed for workforce and staff training  
-- Adaptive learning features + impact measurement  
-- 📂 [Live App](https://type-speed-boost.lovable.app/)  
+🤖 True agentic behavior: autonomous operation, zero human in loop  
+🧾 Dual output: human + machine-readable  
+🔐 Security-first: filters, validation, schema enforcement  
+📂 [Repo](https://github.com/earlgreyhot1701D/Ariadne-Clew)
 
 ---
 
-📌 Currently Working On  
-- Iterating and expanding **Ariadne Clew** — my primary project, focused on explainable agent chains and traceable memory.  
-- Building **Jury Eligibility Chatbot v10** (semantic search, exception handling, memory).  
-- Extending **Proof of Scoville** with zkTLS verification and UX polish.  
-- Developing **ThreadKeeper** MVP in Lovable for AI project memory.  
-- Enhancing **Office Keys** with adaptive learning features for digital literacy. 
+## 🎮 TICKETGLASS
+
+**AI-Powered IT Support Transparency**
+
+Customers can finally see what's happening with their IT support tickets—no more black box.
+
+Problem: IT support tickets are opaque. Customers don't know what's happening, why it's happening, or if their issue will be repeated.
+
+Solution: Real-time updates, context-aware explanations, never repeated solutions. Built with AWS Bedrock + Claude AI.
+
+**What shipped:**
+- Real-time ticket visibility
+- AI-powered context and explanations
+- Solution tracking to prevent repetition
+- Built for SuperHack 2025
+
+🤖 AWS Bedrock + Claude AI  
+👀 Transparency-first design  
+🔄 Smart solution tracking  
+📂 [Repo](https://github.com/earlgreyhot1701D/ticketglass)
 
 ---
+
+## ⚖️ Civic & Legal AI Projects
+
+**Jury Eligibility Chatbot**
+Prototype chatbot answering jury service questions using the California Code of Civil Procedure and Court Rules.
+
+Built with Amazon Bedrock (Claude 3) and RAG architecture.
+
+**12 Angry Rows**
+Python ETL + reporting pipeline analyzing 11 years of jury utilization data.
+
+Benchmarks jury usage against NCSC standards. Shows opportunities for court reform.
+
+**Write of Access**
+OCR + document extraction prototype using AWS Textract.
+
+Extracts typed and handwritten content from public court forms. Documents Textract's actual limitations.
+
+**Hung Jury**
+When automation can't reach a verdict.
+
+Proof-of-concept exploring whether Crystal Reports PDFs could be automated. Conclusion: source data quality is the real blocker, not the Python script.
+
+---
+
+## 🧪 Learning Tools & Passion Projects
+
+**Office Keys / Type Speed Boost**
+Gamified typing practice app designed to build foundational digital literacy skills.
+
+Developed for workforce and staff training. Adaptive learning features + impact measurement.  
+⌨️ [Live App](https://type-speed-boost.lovable.app/)
+
+**The Forum Files**
+NBA storytelling meets data analysis, with a focus on the Los Angeles Lakers.
+
+Visual storytelling to highlight bench impact in key moments. Built for Substack + Kaggle.  
+🏀 [Substack](https://theforumfiles.substack.com)
+
+**A Treatise in One Night**
+Late-night reflections blending technical notes (inference, embeddings, transformers) with personal insight.
+
+Part of my CCC AI Summer Camp blog: Beyond the Docket.  
+✍️ [Beyond the Docket](https://sites.google.com/view/beyondthedocket/home)
+
+---
+
+## 📌 Currently Working On (Dec 1 Deadline)
+
+**Janus Clew — Final Push**
+- Integration testing (Phase 1 + Phase 2 together)
+- AgentCore agent performance tuning
+- UI polish and demo script rehearsal
+- Final documentation for judges
+- Video recording as backup demo
+
+**Status:** Ready for deployment. All systems operational.
+
+---
+
+## 🏆 Prior Wins
+
+**Second Place** (out of 14 teams) — CCC AI Summer Camp 2025  
+Cal Poly DxHub with team on personalized tutoring system for students with disabilities.  
+My contribution: AI-powered PDF text extraction pipeline that ingests materials into RAG knowledge base.  
+🔗 [CCC AI Summer Camp](https://dxhub.calpoly.edu/ccc-ai-summer-camp/)
+
+---
+
+## 🎯 Technical Stack
+
+**Languages:** Python, TypeScript, JavaScript  
+**Backend:** FastAPI, AWS (Bedrock, AgentCore, DynamoDB, S3, Lambda)  
+**Frontend:** React, Next.js, Tailwind CSS  
+**Data:** RAG, vector embeddings, semantic search  
+**Testing:** pytest, comprehensive test suites  
+**DevOps:** Docker, ECR, AWS deployment  
+
+---
+
+## 🧠 Development Philosophy
+
+**Occam's Razor:** Simple, focused solution over feature bloat. Solve one problem completely before adding the next.
+
+**Single Responsibility:** Every component, every function, every project does one thing and does it well. No Swiss Army knives.
+
+**Vibe Coding:** Human-AI partnership. AI serves as thinking partner, not code generator.
+
+**Security-First:** PII protection, content filtering, guardrails baked in early.
+
+**Ship Fast, Test Hard:** Pragmatic MVPs where it matters, rigorous testing for core logic.
+
+**Build for Edge Cases:** Solo builders, indie operators, underserved communities.
+
+**Operational Thinking:** 9 years in judicial systems taught me how real systems fail.
+
+---
+
+## 📍 Location & Contact
+
+📍 Santa Barbara, CA  
+✉️ lsjcordero@gmail.com  
+💼 [LinkedIn](https://www.linkedin.com/in/la-shara-cordero-a0017a11/)  
+🌐 [Beyond the Docket](https://sites.google.com/view/beyondthedocket/home)  
+🖋️ Supernote enthusiast, always learning
+
+---
+
+**Current focus:** Shipping Janus Clew for AWS hackathon (Dec 1, 2025)  
+**Next:** Full-stack depth across civic tech + AI infrastructure
 
 📍 California |  ✉️ lashara.cordero@calbrightcollege.org  
 🖋️ *Supernote love, always*  
