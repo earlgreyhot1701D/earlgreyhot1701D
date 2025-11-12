@@ -9,7 +9,7 @@ Exploring AI for public systems · Developer Growth Tracking · Civic Automation
 
 ## 🧭 What I'm About
 
-I work at the intersection of government systems, developer workflows, and emerging AI. I build full-stack systems that make invisible things visible—whether it's developer growth, legal processes, or civic workflows. Nine years in judicial operations taught me how real systems fail. Now I'm building tools to fix them.
+I work at the intersection of government systems, data, and emerging technologies; exploring how applied AI can support real people in real institutions. Whether it’s jury panel logistics or digital literacy tools, I’m building the skills to automate workflows, structure knowledge, and communicate complex ideas with clarity and care.
 
 ---
 
