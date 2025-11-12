@@ -180,7 +180,7 @@ My contribution: AI-powered PDF text extraction pipeline that ingests materials 
 
 **Single Responsibility:** Every component, every function, every project does one thing and does it well. No Swiss Army knives.
 
-**Vibe Coding:** Human-AI partnership. AI serves as thinking partner, not code generator.
+**Vibe Coding:** Human-AI partnership. AI serves as thinking partner, and also code generator.
 
 **Security-First:** PII protection, content filtering, guardrails baked in early.
 
@@ -188,25 +188,22 @@ My contribution: AI-powered PDF text extraction pipeline that ingests materials 
 
 **Build for Edge Cases:** Solo builders, indie operators, underserved communities.
 
-**Operational Thinking:** 9 years in judicial systems taught me how real systems fail.
+**Operational Thinking:** 9 years in judicial systems taught me how implementations have cause and effect in the real world.
 
 ---
 
 ## 📍 Location & Contact
 
 📍 Santa Barbara, CA  
-✉️ lsjcordero@gmail.com  
+✉️ lashara.cordero@calbrightcollege.org 
 💼 [LinkedIn](https://www.linkedin.com/in/la-shara-cordero-a0017a11/)  
 🌐 [Beyond the Docket](https://sites.google.com/view/beyondthedocket/home)  
-🖋️ Supernote enthusiast, always learning
+🖋️ 🖋️ *Supernote love, always* 
 
 ---
 
 **Current focus:** Shipping Janus Clew for AWS hackathon (Dec 1, 2025)  
 **Next:** Full-stack depth across civic tech + AI infrastructure
-
-📍 California |  ✉️ lashara.cordero@calbrightcollege.org  
-🖋️ *Supernote love, always*  
 
 ---
 
