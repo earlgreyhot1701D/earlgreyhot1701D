@@ -23,7 +23,7 @@
 
 ## Who I Am
 
-I manage courtroom operations at Santa Barbara Superior Court — ten years of watching systems work, fail, and get blamed on the wrong thing.
+I manage courtroom operations at Santa Barbara Superior Court — nine years of watching systems work, fail, and get blamed on the wrong thing.
 
 I started building AI tools in July 2025. I use AI as a thinking partner, move fast, and ship real things. Growth is measurable. Context shouldn't evaporate. Invisible problems deserve visible solutions.
 
@@ -148,6 +148,20 @@ Built for SuperHack 2025
 
 ---
 
+### 🕯️ [Lumen Clew](https://github.com/earlgreyhot1701D/lumen-clew) — Code Health Scanner
+
+Most code feedback comes with judgment baked in. Lumen doesn't do that.
+
+Paste any public GitHub repo URL and get insights across code quality, dependency health, secret detection, and accessibility — with Claude translating findings into plain English. Awareness, not shame. Reflection, not prescription.
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=fff)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=flat&logo=claude&logoColor=fff)
+
+[Live app → lumenclew.lovable.app](https://lumenclew.lovable.app)
+
+---
+
 ### 🔧 [Clew Forge](https://github.com/earlgreyhot1701D/clew-forge) — Project Framework
 
 Where your reasoning threads become real artifacts. Lightweight framework for builders shipping fast without losing clarity. Start with 3 files.
@@ -197,9 +211,10 @@ The work I do at the intersection of courts, data, and people who deserve better
 
 <div align="center">
 
-![Shara's GitHub Stats](https://github-readme-stats.vercel.app/api?username=earlgreyhot1701D&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+![Profile Summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=earlgreyhot1701D&theme=tokyonight)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=earlgreyhot1701D&layout=compact&theme=tokyonight&hide_border=true)
+![Repos by Language](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=earlgreyhot1701D&theme=tokyonight)
+![Most Commit Language](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=earlgreyhot1701D&theme=tokyonight)
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=earlgreyhot1701D&theme=tokyonight&hide_border=true)
 
@@ -240,4 +255,7 @@ The work I do at the intersection of courts, data, and people who deserve better
 <div align="center">
 <i>Built with ☕, stubbornness, and a rubber duck from AI camp.</i><br>
 📍 Santa Barbara, CA &nbsp;·&nbsp; 🖋️ Supernote devotee &nbsp;·&nbsp; 🏀 Lakers forever
+
+<br><br>
+<i>AI-assisted development. Human reviewed. All mistakes are mine.</i>
 </div>
