@@ -170,7 +170,7 @@ Work at the intersection of courts, data, and people who deserve better tools.
 | Project | What it does |
 |---|---|
 | [Themis Lex](https://github.com/earlgreyhot1701D/themis-lex) 🌐 **[live: themislex.org](https://themislex.org)** | Plain-English AI readiness check for California court staff: what AI can help with, what it must never touch, as a PDF you can hand your supervisor |
-| [Permission to Approach the Firewall](https://github.com/earlgreyhot1701D/permission-to-approach-the-firewall) | AI-powered cybersecurity awareness program for court staff. Founderz AI Skills 4 Women Open Challenge winner |
+| [Permission to Approach the Firewall](https://github.com/earlgreyhot1701D/permission-to-approach-the-firewall) | AI-powered cybersecurity awareness program for court staff: phishing scenarios, training materials, and assessment tools |
 | [12 Angry Rows](https://github.com/earlgreyhot1701D/12-angry-rows) | 11 years of jury utilization data, benchmarked against NCSC standards |
 | [Write of Access](https://github.com/earlgreyhot1701D/write-of-access) | AWS Textract on public court forms, with honest documentation of what it can't do |
 | [Hung Jury](https://github.com/earlgreyhot1701D/hung-jury) | Explored automating Crystal Reports PDFs. The blocker was data quality, not Python. Sometimes the finding is the deliverable |
@@ -200,7 +200,6 @@ Work at the intersection of courts, data, and people who deserve better tools.
 | 🥇 | **AI Vibe Coding Hackathon** (2026) | Featherless.ai 1st Place + ElevenLabs Best Project · 4th of 250 (Memoria Clew) |
 | 🥇 | **DEV WeCoded Challenge** (2026) | Winner |
 | 🥇 | **DEV April Fools Challenge** (2026) | Best Use of Google AI (Steep) |
-| 🥇 | **Founderz AI Skills 4 Women** (2026) | Open Challenge winner (Permission to Approach the Firewall) |
 | 🏅 | **AWS 10,000 AIdeas Competition** (2026) | Semi-Finalist (Clew Directive) |
 | 🥈 | **CCC AI Summer Camp, Cal Poly DxHub/AWS** (2025) | 2nd of 14 teams · selected 1 of 100 from 1,300 applicants |
 | 🎤 | **NACM 2026 Midyear Conference** | Presenter: "Building Bridges: How Leaders Can Enable Staff Innovation" + AI learning paths session |
