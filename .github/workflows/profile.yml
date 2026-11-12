@@ -7,7 +7,7 @@ on:
     - cron: "23 14 * * *"   # daily, 6:23 AM Pacific (off the top of the hour to dodge queue delays)
   workflow_dispatch:
   push:
-    branches: [main, spike/devto-panel]
+    branches: [main]
     paths:
       - "data/profile.json"
       - "scripts/profile/**"
