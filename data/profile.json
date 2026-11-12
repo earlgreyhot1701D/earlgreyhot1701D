@@ -77,7 +77,7 @@
     {"slug": "dev", "label": "DEV.TO", "sub": "writing", "url": "https://dev.to/earlgreyhot1701d"},
     {"slug": "linkedin", "label": "LINKEDIN", "sub": "connect", "url": "https://www.linkedin.com/in/la-shara-cordero-a0017a11/"},
     {"slug": "substack", "label": "FORUM FILES", "sub": "substack", "url": "https://theforumfiles.substack.com/"},
-    {"slug": "email", "label": "EMAIL", "sub": "hail me", "url": "mailto:cordero.lsj@gmail.com"}
+    {"slug": "email", "label": "EMAIL", "sub": "hail me", "url": "mailto:lsjcordero@gmail.com"}
   ],
   "gem_slugs": [
     "ai-took-me-to-three-stages-i-still-dont-like-public-speaking-1g38",
