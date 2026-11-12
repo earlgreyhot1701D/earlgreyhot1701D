@@ -11,6 +11,10 @@ In July 2025 I started building AI tools from the inside of the institution, not
 
 Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the correct order.
 
+🛰️ **Open to:** roles where civic experience meets AI building. Prototyping, AI enablement, public-sector AI, or a job that didn't exist a year ago. AI-assisted building gave me wings. I want to use them where institutions and the people they serve need a translator.
+
+🎓 **Credentials:** AWS Certified AI Practitioner · AWS AI/ML Scholar, Agent Engineer Nanodegree (2026) · Certified Court Manager (CCM) · MPA, Claremont Lincoln University · Paralegal Certificate, UCSB · BA Liberal Studies, CSU Long Beach
+
 <img src="assets/h-primary.svg" width="100%" alt="02 Primary Mission (Featured Project)">
 
 <a href="https://verity-lex.vercel.app"><img src="assets/mission-verity.svg" width="100%" alt="Primary mission: Verity Lex, live. Everyone is selling AI to government. Who has checked whether government is ready to buy? Scores a California superior court&#x27;s AI readiness from its own public record, against Rule of Court 10.430, Gov. Code 68150, and Rule of Court 10.500. An agentic scan gathers evidence. A deterministic rule engine assigns the score. The AI reads the record. It never assigns the score."></a>
