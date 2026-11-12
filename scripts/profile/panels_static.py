@@ -82,7 +82,7 @@ def header(profile, stats, stardate):
     return svg(w, h, body, label, style)
 
 
-FLYBY_CYCLE, FLYBY_FLIGHT = 30.0, 11.0  # seconds per loop, seconds on screen
+FLYBY_CYCLE, FLYBY_FLIGHT = 18.0, 11.0  # seconds per loop, seconds on screen
 
 
 def _flyby(w):
