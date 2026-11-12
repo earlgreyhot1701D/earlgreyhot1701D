@@ -30,6 +30,15 @@ def stats(live):
     return svg(w, h, "".join(out), label)
 
 
+def _short_date(iso):
+    months = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
+    try:
+        y, m, d = iso.split("-")
+        return f"{months[int(m) - 1]} {int(d)}"
+    except (ValueError, IndexError):
+        return ""
+
+
 STAR_R = {1: 1.7, 2: 2.5, 3: 3.3, 4: 4.2}
 STAR_FILL = {1: "#6b4e86", 2: "#9B59B6", 3: "#c9a0e0", 4: "#ffffff"}
 
@@ -69,6 +78,15 @@ def starchart(live):
                 out.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{STAR_R[level]}" fill="{STAR_FILL[level]}"/>')
     if shown:
         out.append(_patrol(shown, stars, cell, top, left))
+    peak = live.get("contrib_peak") or {}
+    streak = live.get("contrib_longest_streak")
+    facts = []
+    if peak.get("count"):
+        facts.append(f'BRIGHTEST STAR {_short_date(peak.get("date", ""))} · {peak["count"]} commits')
+    if streak:
+        facts.append(f"LONGEST STREAK {streak} days")
+    if facts:
+        out.append(f'<text x="{w / 2}" y="{h - 18}" font-size="11.5" fill="{C["accent2"]}" text-anchor="middle" letter-spacing="1" xml:space="preserve">{esc("   |   ".join(facts))}</text>')
     out.append(f'<text x="{left - 4}" y="{h - 18}" font-size="11" fill="{C["dim"]}">52 WEEKS AGO</text>')
     out.append(f'<text x="{w - 28}" y="{h - 18}" font-size="11" fill="{C["dim"]}" text-anchor="end">TODAY</text>')
     style = """
@@ -80,11 +98,14 @@ def starchart(live):
   @media (prefers-reduced-motion: reduce) { .ship, .ping { display: none; } }
 """
     label = (f"Star chart of GitHub contributions over the last year: {_fmt(total)} contributions, one star per day. "
+             + (f"Brightest star: {_short_date(peak.get('date', ''))} with {peak.get('count')} commits. " if peak.get("count") else "")
+             + (f"Longest streak: {streak} days. " if streak else "")
+             + 
              "A small scout ship patrols the chart, and each active day flares as it passes.")
     return svg(w, h, "".join(out), label, style)
 
 
-PATROL_MOVE, PATROL_CYCLE = 26.0, 30.0  # seconds flying, seconds per loop (the rest is a pause)
+PATROL_MOVE, PATROL_CYCLE = 80.0, 86.0  # seconds flying, seconds per loop (the rest is a pause)
 
 
 def _patrol(shown, stars, cell, top, left):

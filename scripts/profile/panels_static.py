@@ -6,32 +6,51 @@ from theme import (C, STATUS_LABEL, WIDTH, brackets, esc, panel_bg, status_dot, 
                    text_lines, wrap)
 
 
+TYPE_LOOP = 9.0  # seconds: type, hold, erase, repeat
+
+
+def _typed_line(text, cx, y, size):
+    """Centered line that types out, holds, erases, and retypes. Per-character SMIL, so it stays
+    aligned in any font. Static renders show the full line."""
+    n = len(text)
+    spans = []
+    for i, ch in enumerate(text):
+        ta = max(0.004, (0.25 + i * 0.09) / TYPE_LOOP)
+        tv = (6.8 + (n - i) * 0.035) / TYPE_LOOP
+        spans.append(
+            f'<tspan>{esc(ch)}<animate attributeName="opacity" values="0;1;0" '
+            f'keyTimes="0;{ta:.4f};{tv:.4f}" calcMode="discrete" dur="{TYPE_LOOP:.0f}s" repeatCount="indefinite"/></tspan>'
+        )
+    return (f'<text x="{cx}" y="{y}" font-size="{size}" fill="{C["accent"]}" text-anchor="middle" xml:space="preserve">'
+            + "".join(spans) + '<tspan class="cursor">\u2588</tspan></text>')
+
+
 def header(profile, stats, stardate):
     w, h = WIDTH, 270
+    mid = w / 2
     rnd = random.Random(1701)  # fixed seed: same sky every run, no noisy diffs
     stars = []
     for i in range(80):
         x, y, r = rnd.uniform(8, w - 8), rnd.uniform(8, h - 8), rnd.choice([0.6, 0.8, 1.0, 1.4])
         cls = f' class="tw tw{i % 3}"' if i % 4 == 0 else ""
         stars.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r}" fill="#ffffff" opacity="0.55"{cls}/>')
-    typed = "> TEA. EARL GREY. HOT."
-    typed_w = (len(typed) + 2) * 22 * 0.6 + 4  # room for the cursor glyph
     chips = [
         ("STATUS", "ON DUTY", C["live"]),
         ("HOME PORT", "CA COURTS", C["accent"]),
         ("FLEET", f"{stats.get('public_repos', '60+')} REPOS", C["accent2"]),
         ("DEV", f"{stats.get('dev_posts', '60+')} POSTS", C["docked"]),
     ]
-    chip_svg, cx = [], 36
-    for n, (k, v, col) in enumerate(chips):
-        label = f"{k} "
-        cw = int((len(label) + len(v)) * 11 * 0.6 + 24)
+    widths = [int((len(k) + 1 + len(v)) * 11 * 0.6 + 24) for k, v, _ in chips]
+    gap = 10
+    cx = mid - (sum(widths) + gap * (len(chips) - 1)) / 2
+    chip_svg = []
+    for n, ((k, v, col), cw) in enumerate(zip(chips, widths)):
         chip_svg.append(
             f'<g class="chip c{n}">'
-            f'<rect x="{cx}" y="214" width="{cw}" height="26" rx="4" fill="{C["panel"]}" stroke="{col}" stroke-opacity="0.7"/>'
-            f'<text x="{cx + 12}" y="231" font-size="11" fill="{C["dim"]}">{esc(label)}<tspan fill="{col}" font-weight="700">{esc(v)}</tspan></text></g>'
+            f'<rect x="{cx:.0f}" y="214" width="{cw}" height="26" rx="4" fill="{C["panel"]}" stroke="{col}" stroke-opacity="0.7"/>'
+            f'<text x="{cx + cw / 2:.0f}" y="231" font-size="11" fill="{C["dim"]}" text-anchor="middle">{esc(k)} <tspan fill="{col}" font-weight="700">{esc(v)}</tspan></text></g>'
         )
-        cx += cw + 10
+        cx += cw + gap
     body = (
         panel_bg(w, h, 12)
         + "".join(stars)
@@ -40,12 +59,10 @@ def header(profile, stats, stardate):
         + f'<text x="36" y="46" font-size="12" fill="{C["dim"]}" letter-spacing="2">BRIDGE CONSOLE // {esc(profile["handle"].upper())}</text>'
         + f'<text x="{w - 36}" y="46" font-size="12" fill="{C["accent2"]}" text-anchor="end" letter-spacing="2">STARDATE {esc(stardate)}</text>'
         + f'<line x1="36" y1="58" x2="{w - 36}" y2="58" stroke="{C["line"]}"/>'
-        + '<clipPath id="type"><rect x="34" y="70" height="34" width="' + f"{typed_w:.0f}" + '">'
-        + f'<animate attributeName="width" values="0;{typed_w:.0f}" dur="2.2s" fill="freeze"/></rect></clipPath>'
-        + f'<text x="36" y="96" font-size="22" fill="{C["accent"]}" clip-path="url(#type)">{esc(typed)}<tspan class="cursor">█</tspan></text>'
-        + f'<text x="36" y="152" font-size="44" font-weight="700" fill="{C["text"]}" letter-spacing="3">{esc(profile["name"])}</text>'
-        + f'<text x="36" y="182" font-size="17" fill="{C["accent2"]}">{esc(profile["tagline"])}</text>'
-        + f'<text x="36" y="202" font-size="12.5" fill="{C["dim"]}">{esc(profile["subtitle"])}</text>'
+        + _typed_line("> TEA. EARL GREY. HOT.", mid, 96, 22)
+        + f'<text x="{mid}" y="152" font-size="44" font-weight="700" fill="{C["text"]}" letter-spacing="3" text-anchor="middle">{esc(profile["name"])}</text>'
+        + f'<text x="{mid}" y="182" font-size="17" fill="{C["accent2"]}" text-anchor="middle">{esc(profile["tagline"])}</text>'
+        + f'<text x="{mid}" y="202" font-size="12.5" fill="{C["dim"]}" text-anchor="middle">{esc(profile["subtitle"])}</text>'
         + "".join(chip_svg)
     )
     style = """
@@ -65,7 +82,7 @@ def header(profile, stats, stardate):
     return svg(w, h, body, label, style)
 
 
-FLYBY_CYCLE, FLYBY_FLIGHT = 22.0, 6.0  # seconds per loop, seconds on screen
+FLYBY_CYCLE, FLYBY_FLIGHT = 30.0, 11.0  # seconds per loop, seconds on screen
 
 
 def _flyby(w):
@@ -86,7 +103,7 @@ def _flyby(w):
     )
 
 
-def heading(num, title, code):
+def heading(num, title, plain):
     w, h = WIDTH, 52
     tw = (len(title) + 3) * (16 * 0.6 + 1.5)  # include "// " and letter-spacing
     body = (
@@ -94,10 +111,10 @@ def heading(num, title, code):
         + f'<path d="M14,26 L22,18 L30,26 L22,34 Z" fill="{C["accent"]}"/>'
         f'<text x="42" y="32" font-size="13" fill="{C["accent2"]}" font-weight="700">{num:02d}</text>'
         f'<text x="70" y="32" font-size="16" font-weight="700" fill="{C["text"]}" letter-spacing="1.5">// {esc(title)}</text>'
-        f'<line x1="{70 + tw + 14:.0f}" y1="27" x2="{w - 90}" y2="27" stroke="{C["line"]}"/>'
-        f'<text x="{w - 14}" y="31" font-size="11" fill="{C["dim"]}" text-anchor="end" letter-spacing="2">{esc(code)}</text>'
+        f'<line x1="{70 + tw + 14:.0f}" y1="27" x2="{w - 28 - len(plain) * (11 * 0.6 + 2):.0f}" y2="27" stroke="{C["line"]}"/>'
+        f'<text x="{w - 14}" y="31" font-size="11" fill="{C["dim"]}" text-anchor="end" letter-spacing="2">{esc(plain)}</text>'
     )
-    return svg(w, h, body, title.title())
+    return svg(w, h, body, f"{num:02d} {title.title()} ({plain.title()})")
 
 
 def mission_card(m):

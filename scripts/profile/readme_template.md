@@ -3,7 +3,7 @@
 <img src="assets/header.svg" width="100%" alt="{{header_alt}}">
 </p>
 
-<img src="assets/h-log.svg" width="100%" alt="01 Captain's Log">
+<img src="assets/h-log.svg" width="100%" alt="01 Captain's Log (About)">
 
 I run courtroom operations at Santa Barbara Superior Court: courtroom clerks, court reporters, and court interpreters. Ten years inside California courts taught me how systems serve people, and exactly where they fall short.
 
@@ -11,25 +11,25 @@ In July 2025 I started building AI tools from the inside of the institution, not
 
 Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the correct order.
 
-<img src="assets/h-primary.svg" width="100%" alt="02 Primary Mission">
+<img src="assets/h-primary.svg" width="100%" alt="02 Primary Mission (Featured Project)">
 
 <a href="https://verity-lex.vercel.app"><img src="assets/mission-verity.svg" width="100%" alt="{{alt_verity}}"></a>
 
 <p align="center">🟢 <a href="https://verity-lex.vercel.app"><b>Live</b></a> · <a href="https://verity-lex.vercel.app/methods">Methods</a> · <a href="https://youtu.be/aEg4BB8-ad0">Demo video</a> · <a href="https://github.com/earlgreyhot1701D/verity-lex">Repo</a></p>
 
-<img src="assets/h-second.svg" width="100%" alt="03 Second in Command">
+<img src="assets/h-second.svg" width="100%" alt="03 Second in Command (Featured Project)">
 
 <a href="https://agentislux.io"><img src="assets/mission-agentis.svg" width="100%" alt="{{alt_agentis}}"></a>
 
 <p align="center">🟢 <a href="https://agentislux.io"><b>Live</b></a> · <a href="https://youtu.be/bv56_XB1E_c">Demo video</a> · <a href="https://github.com/earlgreyhot1701D/perseus-clew">Repo: perseus-clew</a></p>
 
-<img src="assets/h-drydock.svg" width="100%" alt="04 In Drydock">
+<img src="assets/h-drydock.svg" width="100%" alt="04 In Drydock (In Progress)">
 
 <a href="https://github.com/earlgreyhot1701D/dead-keys"><img src="assets/mission-deadkeys.svg" width="100%" alt="{{alt_deadkeys}}"></a>
 
 <p align="center">🟡 <a href="https://github.com/earlgreyhot1701D/dead-keys"><b>Repo</b></a> · <a href="https://github.com/earlgreyhot1701D/dead-keys/blob/main/docs/prd.md">PRD</a> · <a href="https://github.com/earlgreyhot1701D/office-keys">Office Keys, its predecessor</a></p>
 
-<img src="assets/h-fleet.svg" width="100%" alt="05 Active Fleet">
+<img src="assets/h-fleet.svg" width="100%" alt="05 Active Fleet (Projects)">
 
 <p align="center">
 {{fleet_cards}}
@@ -65,7 +65,7 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 </details>
 
-<img src="assets/h-away.svg" width="100%" alt="06 Away Missions: Civic and Legal AI">
+<img src="assets/h-away.svg" width="100%" alt="06 Away Missions (Civic and Legal AI)">
 
 <p align="center">
 {{away_cards}}
@@ -85,11 +85,11 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 </details>
 
-<img src="assets/h-commendations.svg" width="100%" alt="07 Commendations">
+<img src="assets/h-commendations.svg" width="100%" alt="07 Commendations (Awards and Talks)">
 
 <img src="assets/commendations.svg" width="100%" alt="{{alt_commendations}}">
 
-<img src="assets/h-transmissions.svg" width="100%" alt="08 Transmissions from DEV">
+<img src="assets/h-transmissions.svg" width="100%" alt="08 Transmissions from DEV (Writing)">
 
 {{transmissions}}
 
@@ -113,13 +113,13 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 <sub>WeCoded Winner · Best Use of Google AI · Top 7 · 💎 Community Gems · 24-Week Streak</sub>
 </p>
 
-<img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors">
+<img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors (GitHub Stats)">
 
 <img src="assets/stats.svg" width="100%" alt="{{alt_stats}}">
 
 <img src="assets/starchart.svg" width="100%" alt="{{alt_starchart}}">
 
-<img src="assets/h-orders.svg" width="100%" alt="10 Standing Orders">
+<img src="assets/h-orders.svg" width="100%" alt="10 Standing Orders (How I Work)">
 
 I don't write code from scratch. I give creative direction and validation: AI tools generate, I compare outputs, pick what works, and stitch it into something that holds up.
 
@@ -129,7 +129,7 @@ I don't write code from scratch. I give creative direction and validation: AI to
 4. **Name the limits.** What a tool can't do goes in the docs, not under the rug.
 5. **Operational Thinking.** Ten years in courts means I know implementations have consequences.
 
-<img src="assets/h-hailing.svg" width="100%" alt="11 Hailing Frequencies Open">
+<img src="assets/h-hailing.svg" width="100%" alt="11 Hailing Frequencies Open (Contact)">
 
 <p align="center">
 {{link_tiles}}

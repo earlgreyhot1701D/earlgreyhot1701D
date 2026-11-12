@@ -16,10 +16,12 @@ DATA = ROOT / "data"
 TEMPLATE = Path(__file__).with_name("readme_template.md")
 
 HEADINGS = [
-    ("log", "CAPTAIN'S LOG"), ("primary", "PRIMARY MISSION"), ("second", "SECOND IN COMMAND"),
-    ("drydock", "IN DRYDOCK"), ("fleet", "ACTIVE FLEET"), ("away", "AWAY MISSIONS"),
-    ("commendations", "COMMENDATIONS"), ("transmissions", "TRANSMISSIONS FROM DEV"),
-    ("sensors", "SHIP'S SENSORS"), ("orders", "STANDING ORDERS"), ("hailing", "HAILING FREQUENCIES OPEN"),
+    ("log", "CAPTAIN'S LOG", "ABOUT"), ("primary", "PRIMARY MISSION", "FEATURED PROJECT"),
+    ("second", "SECOND IN COMMAND", "FEATURED PROJECT"), ("drydock", "IN DRYDOCK", "IN PROGRESS"),
+    ("fleet", "ACTIVE FLEET", "PROJECTS"), ("away", "AWAY MISSIONS", "CIVIC & LEGAL AI"),
+    ("commendations", "COMMENDATIONS", "AWARDS & TALKS"), ("transmissions", "TRANSMISSIONS FROM DEV", "WRITING"),
+    ("sensors", "SHIP'S SENSORS", "GITHUB STATS"), ("orders", "STANDING ORDERS", "HOW I WORK"),
+    ("hailing", "HAILING FREQUENCIES OPEN", "CONTACT"),
 ]
 
 
@@ -50,8 +52,8 @@ def main(mock=False):
     stardate = datetime.now(timezone.utc).strftime("%Y.%m")
 
     write("header.svg", static_p.header(profile, live, stardate))
-    for i, (slug, title) in enumerate(HEADINGS, 1):
-        write(f"h-{slug}.svg", static_p.heading(i, title, f"SEC.{i:02d}"))
+    for i, (slug, title, plain) in enumerate(HEADINGS, 1):
+        write(f"h-{slug}.svg", static_p.heading(i, title, plain))
     write("mission-verity.svg", static_p.mission_card(profile["primary"]))
     write("mission-agentis.svg", static_p.mission_card(profile["second"]))
     write("mission-deadkeys.svg", static_p.mission_card(profile["drydock"]))

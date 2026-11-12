@@ -69,7 +69,14 @@ def fetch_contributions(login):
     res = _get_json("https://api.github.com/graphql", {**_gh_headers(), "Content-Type": "application/json"}, body)
     cal = res["data"]["user"]["contributionsCollection"]["contributionCalendar"]
     weeks = [[LEVELS.get(d["contributionLevel"], 0) for d in w["contributionDays"]] for w in cal["weeks"]]
-    return {"contrib_total": int(cal["totalContributions"]), "contrib_weeks": weeks}
+    days = [(d["date"], int(d["contributionCount"])) for w in cal["weeks"] for d in w["contributionDays"]]
+    peak_date, peak = max(days, key=lambda d: d[1]) if days else ("", 0)
+    longest = run = 0
+    for _, count in days:
+        run = run + 1 if count > 0 else 0
+        longest = max(longest, run)
+    return {"contrib_total": int(cal["totalContributions"]), "contrib_weeks": weeks,
+            "contrib_peak": {"date": peak_date, "count": peak}, "contrib_longest_streak": longest}
 
 
 def gather(profile, cache_path):
