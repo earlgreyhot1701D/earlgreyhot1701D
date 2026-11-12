@@ -3,7 +3,7 @@
 <img src="assets/header.svg" width="100%" alt="L. CORDERO: Court operator who builds. Auditable AI for courts and the people they serve.">
 </p>
 
-<img src="assets/h-log.svg" width="100%" alt="01 Captain's Log">
+<img src="assets/h-log.svg" width="100%" alt="01 Captain's Log (About)">
 
 I run courtroom operations at Santa Barbara Superior Court: courtroom clerks, court reporters, and court interpreters. Ten years inside California courts taught me how systems serve people, and exactly where they fall short.
 
@@ -11,25 +11,25 @@ In July 2025 I started building AI tools from the inside of the institution, not
 
 Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the correct order.
 
-<img src="assets/h-primary.svg" width="100%" alt="02 Primary Mission">
+<img src="assets/h-primary.svg" width="100%" alt="02 Primary Mission (Featured Project)">
 
 <a href="https://verity-lex.vercel.app"><img src="assets/mission-verity.svg" width="100%" alt="Primary mission: Verity Lex, live. Everyone is selling AI to government. Who has checked whether government is ready to buy? Scores a California superior court&#x27;s AI readiness from its own public record, against Rule of Court 10.430, Gov. Code 68150, and Rule of Court 10.500. An agentic scan gathers evidence. A deterministic rule engine assigns the score. The AI reads the record. It never assigns the score."></a>
 
 <p align="center">🟢 <a href="https://verity-lex.vercel.app"><b>Live</b></a> · <a href="https://verity-lex.vercel.app/methods">Methods</a> · <a href="https://youtu.be/aEg4BB8-ad0">Demo video</a> · <a href="https://github.com/earlgreyhot1701D/verity-lex">Repo</a></p>
 
-<img src="assets/h-second.svg" width="100%" alt="03 Second in Command">
+<img src="assets/h-second.svg" width="100%" alt="03 Second in Command (Featured Project)">
 
 <a href="https://agentislux.io"><img src="assets/mission-agentis.svg" width="100%" alt="Second in command: Agentis Lux, live. Your website has a second audience now: AI agents. Shows what retrieval agents experience when they read your site. Paste a URL or an OpenAPI spec, get one report across six categories for frontend and API. Findings, not fixes. Full CI, smoke-tested deploys, SSRF hardening on every redirect hop."></a>
 
 <p align="center">🟢 <a href="https://agentislux.io"><b>Live</b></a> · <a href="https://youtu.be/bv56_XB1E_c">Demo video</a> · <a href="https://github.com/earlgreyhot1701D/perseus-clew">Repo: perseus-clew</a></p>
 
-<img src="assets/h-drydock.svg" width="100%" alt="04 In Drydock">
+<img src="assets/h-drydock.svg" width="100%" alt="04 In Drydock (In Progress)">
 
 <a href="https://github.com/earlgreyhot1701D/dead-keys"><img src="assets/mission-deadkeys.svg" width="100%" alt="In drydock: Dead Keys. A typing game, back from the dead. In 2000, almost half of US high school grads took a typing class. By 2019 it was 2.5%. Dead Keys rebuilds the 1980s typing games I grew up on as a trainer that notices which keys you miss and drills them. It picks up where Office Keys left off."></a>
 
 <p align="center">🟡 <a href="https://github.com/earlgreyhot1701D/dead-keys"><b>Repo</b></a> · <a href="https://github.com/earlgreyhot1701D/dead-keys/blob/main/docs/prd.md">PRD</a> · <a href="https://github.com/earlgreyhot1701D/office-keys">Office Keys, its predecessor</a></p>
 
-<img src="assets/h-fleet.svg" width="100%" alt="05 Active Fleet">
+<img src="assets/h-fleet.svg" width="100%" alt="05 Active Fleet (Projects)">
 
 <p align="center">
 <a href="https://github.com/earlgreyhot1701D/observator-clew"><img src="assets/card-observator.svg" width="49%" alt="Observator Clew, Estate Watch: Creating is becoming nearly free. Maintaining never did. Watches my GitHub estate and learns when not to bother me. Mk II of Daybreak."></a>
@@ -70,7 +70,7 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 </details>
 
-<img src="assets/h-away.svg" width="100%" alt="06 Away Missions: Civic and Legal AI">
+<img src="assets/h-away.svg" width="100%" alt="06 Away Missions (Civic and Legal AI)">
 
 <p align="center">
 <a href="https://themislex.org"><img src="assets/card-themis.svg" width="49%" alt="Themis Lex, Court Staff Readiness: Plain-English AI readiness check for California court staff, as a PDF you can hand your supervisor."></a>
@@ -91,11 +91,11 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 </details>
 
-<img src="assets/h-commendations.svg" width="100%" alt="07 Commendations">
+<img src="assets/h-commendations.svg" width="100%" alt="07 Commendations (Awards and Talks)">
 
 <img src="assets/commendations.svg" width="100%" alt="Commendations: DoraHacks AWS Global Vibe Hackathon (2025): Winner · Draper U scholarship (Janus Clew); AI Vibe Coding Hackathon (2026): Featherless 1st + ElevenLabs Best · 4th of 250; DEV WeCoded Challenge (2026): Winner; DEV April Fools Challenge (2026): Best Use of Google AI (Steep); AWS 10,000 AIdeas (2026): Semi-Finalist (Clew Directive); CCC AI Summer Camp, Cal Poly DxHub/AWS (2025): 2nd of 14 · 1 of 100 from 1,300; NACM 2026 Midyear Conference (2026): Building Bridges: Enabling Staff Innovation; Los Angeles Superior Court (2026): Invited: AI adoption for court staff">
 
-<img src="assets/h-transmissions.svg" width="100%" alt="08 Transmissions from DEV">
+<img src="assets/h-transmissions.svg" width="100%" alt="08 Transmissions from DEV (Writing)">
 
 <a href="https://dev.to/earlgreyhot1701d/a-small-laptop-is-a-full-build-kit-bootstrapping-with-a-chromebook-claude-and-github-4j16"><img src="assets/post-1.svg" width="100%" alt="DEV post: A Small Laptop Is a Full Build Kit: Bootstrapping with a Chromebook, Claude, and GitHub"></a>
 
@@ -123,13 +123,13 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 <sub>WeCoded Winner · Best Use of Google AI · Top 7 · 💎 Community Gems · 24-Week Streak</sub>
 </p>
 
-<img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors">
+<img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors (GitHub Stats)">
 
-<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 79 public repos, 63 DEV posts, 1100 DEV reactions, 2077 contributions this year">
+<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 79 public repos, 63 DEV posts, 1100 DEV reactions, 2078 contributions this year">
 
-<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2077 in total">
+<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2078 in total">
 
-<img src="assets/h-orders.svg" width="100%" alt="10 Standing Orders">
+<img src="assets/h-orders.svg" width="100%" alt="10 Standing Orders (How I Work)">
 
 I don't write code from scratch. I give creative direction and validation: AI tools generate, I compare outputs, pick what works, and stitch it into something that holds up.
 
@@ -139,7 +139,7 @@ I don't write code from scratch. I give creative direction and validation: AI to
 4. **Name the limits.** What a tool can't do goes in the docs, not under the rug.
 5. **Operational Thinking.** Ten years in courts means I know implementations have consequences.
 
-<img src="assets/h-hailing.svg" width="100%" alt="11 Hailing Frequencies Open">
+<img src="assets/h-hailing.svg" width="100%" alt="11 Hailing Frequencies Open (Contact)">
 
 <p align="center">
 <a href="https://clewlabs.org"><img src="assets/link-site.svg" width="19%" alt="CLEWLABS.ORG (portfolio)"></a>
