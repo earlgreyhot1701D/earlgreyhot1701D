@@ -150,7 +150,7 @@ I don't write code from scratch. I give creative direction and validation: AI to
 <a href="https://dev.to/earlgreyhot1701d"><img src="assets/link-dev.svg" width="19%" alt="DEV.TO (writing)"></a>
 <a href="https://www.linkedin.com/in/la-shara-cordero-a0017a11/"><img src="assets/link-linkedin.svg" width="19%" alt="LINKEDIN (connect)"></a>
 <a href="https://theforumfiles.substack.com/"><img src="assets/link-substack.svg" width="19%" alt="FORUM FILES (substack)"></a>
-<a href="mailto:cordero.lsj@gmail.com"><img src="assets/link-email.svg" width="19%" alt="EMAIL (hail me)"></a>
+<a href="mailto:lsjcordero@gmail.com"><img src="assets/link-email.svg" width="19%" alt="EMAIL (hail me)"></a>
 </p>
 
 <img src="assets/footer.svg" width="100%" alt="End transmission. AI assisted. Human approved. Powered by NLP.">
