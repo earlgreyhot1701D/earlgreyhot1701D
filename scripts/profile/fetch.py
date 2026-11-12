@@ -56,6 +56,32 @@ def fetch_github_user(login):
     return {"public_repos": int(u.get("public_repos") or 0), "followers": int(u.get("followers") or 0)}
 
 
+WORLD_TOPICS = {"world": "shipped", "building": "building"}
+
+
+def _pretty(repo):
+    return " ".join(p.capitalize() if p.islower() else p for p in repo.replace("_", "-").split("-"))
+
+
+def fetch_topic_worlds(login):
+    """Repos tagged with the topic 'world' or 'building' become planets on the star chart."""
+    worlds, page = [], 1
+    while page <= 5:
+        batch = _get_json(f"https://api.github.com/users/{login}/repos?per_page=100&page={page}", _gh_headers())
+        if not isinstance(batch, list):
+            raise ValueError("GitHub repos API returned an unexpected shape")
+        for r in batch:
+            topics = set(r.get("topics") or [])
+            status = next((WORLD_TOPICS[t] for t in ("building", "world") if t in topics), None)
+            if status and not r.get("fork"):
+                worlds.append({"repo": r["name"], "name": _pretty(r["name"]),
+                               "date": str(r.get("created_at", ""))[:10], "status": status})
+        if len(batch) < 100:
+            break
+        page += 1
+    return {"topic_worlds": worlds}
+
+
 QUERY = """query($login:String!){user(login:$login){contributionsCollection{contributionCalendar{
 totalContributions weeks{contributionDays{date contributionCount contributionLevel}}}}}}"""
 
@@ -91,6 +117,7 @@ def gather(profile, cache_path):
         ("dev", lambda: fetch_devto(profile["devto_user"])),
         ("github", lambda: fetch_github_user(profile["handle"])),
         ("contrib", lambda: fetch_contributions(profile["handle"])),
+        ("worlds", lambda: fetch_topic_worlds(profile["handle"])),
     )
     failures = []
     for name, fn in sources:

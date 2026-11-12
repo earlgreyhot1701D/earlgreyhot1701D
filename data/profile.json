@@ -197,67 +197,79 @@
     "my-agents-never-get-tired-i-do-on-satisficing-1mb",
     "block-zero-oh-no-claude-kiro-and-i-over-engineered-the-throwaway-5d42"
   ],
-  "worlds_note": "Planets on the star chart. date = when work began (repo creation date by default). Edit freely; status: shipped or building.",
+  "worlds_note": "Planets on the star chart. Easiest way to add one: give the repo the GitHub topic 'world' (or 'building' while in progress). Entries here override topics: use them to rename a planet or change its date.",
   "worlds": [
     {
       "name": "Janus",
       "date": "2025-11-09",
-      "status": "shipped"
+      "status": "shipped",
+      "repo": "janus-clew"
     },
     {
       "name": "Metis",
       "date": "2025-11-22",
-      "status": "shipped"
+      "status": "shipped",
+      "repo": "metis-clew"
     },
     {
       "name": "Memoria",
       "date": "2026-01-30",
-      "status": "shipped"
+      "status": "shipped",
+      "repo": "memoria-clew"
     },
     {
       "name": "Clew Directive",
       "date": "2026-02-15",
-      "status": "shipped"
+      "status": "shipped",
+      "repo": "Clew-Directive"
     },
     {
       "name": "Steep",
       "date": "2026-04-04",
-      "status": "shipped"
+      "status": "shipped",
+      "repo": "steep"
     },
     {
       "name": "Themis Lex",
       "date": "2026-05-10",
-      "status": "shipped"
+      "status": "shipped",
+      "repo": "themis-lex"
     },
     {
       "name": "Agentis Lux",
       "date": "2026-05-31",
-      "status": "shipped"
+      "status": "shipped",
+      "repo": "perseus-clew"
     },
     {
       "name": "Verity Lex",
       "date": "2026-07-18",
-      "status": "shipped"
+      "status": "shipped",
+      "repo": "verity-lex"
     },
     {
       "name": "Porch Light",
       "date": "2026-08-24",
-      "status": "shipped"
+      "status": "shipped",
+      "repo": "porch-light"
     },
     {
       "name": "Observator",
       "date": "2026-09-11",
-      "status": "shipped"
+      "status": "shipped",
+      "repo": "observator-clew"
     },
     {
       "name": "Two Sisters",
       "date": "2026-10-02",
-      "status": "shipped"
+      "status": "shipped",
+      "repo": "two-sisters-tinctures"
     },
     {
       "name": "Dead Keys",
       "date": "2026-11-11",
-      "status": "building"
+      "status": "building",
+      "repo": "dead-keys"
     }
   ]
 }

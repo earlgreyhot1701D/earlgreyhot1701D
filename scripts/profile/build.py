@@ -39,6 +39,21 @@ def card_link(url, src, label, width):
     return f'<a href="{alt(url)}"><img src="{src}" width="{width}" alt="{alt(label)}"></a>'
 
 
+def merge_worlds(manual, tagged):
+    """Manual entries win (they can rename or re-date a planet); tagged repos fill in the rest."""
+    known = {w.get("repo", "").lower() for w in manual}
+    merged = list(manual)
+    for w in tagged:
+        if w["repo"].lower() in known:
+            # the topic still decides shipped vs building, so switching tags is enough
+            for m in merged:
+                if m.get("repo", "").lower() == w["repo"].lower():
+                    m["status"] = w["status"]
+        else:
+            merged.append(w)
+    return merged
+
+
 def main(mock=False):
     profile = json.loads((DATA / "profile.json").read_text(encoding="utf-8"))
     if mock:
@@ -64,7 +79,7 @@ def main(mock=False):
     write("commendations.svg", static_p.commendations(profile["commendations"]))
     write("footer.svg", static_p.footer())
     write("stats.svg", live_p.stats(live))
-    write("starchart.svg", live_p.starchart(live, profile.get("worlds")))
+    write("starchart.svg", live_p.starchart(live, merge_worlds(profile.get("worlds", []), live.get("topic_worlds", []))))
 
     gems = set(profile.get("gem_slugs", []))
     tx_md = []
