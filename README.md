@@ -97,11 +97,11 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-transmissions.svg" width="100%" alt="08 Transmissions from DEV">
 
-<a href="https://dev.to/earlgreyhot1701d/a-small-laptop-is-a-full-build-kit-bootstrapping-with-a-chromebook-claude-and-github-4j16"><img src="assets/post-1.svg" width="100%" alt="DEV post: A Small Laptop Is a Full Build Kit: Bootstrapping with a Chromebook, Claude, and GitHub"></a>
+<a href="https://dev.to/earlgreyhot1701d"><img src="assets/post-1.svg" width="100%" alt="DEV post: A Small Laptop Is a Full Build Kit: Bootstrapping with a Chromebook, Claude, and GitHub"></a>
 
-<a href="https://dev.to/earlgreyhot1701d/a-builder-in-cdmx-flu-edition-167"><img src="assets/post-2.svg" width="100%" alt="DEV post: A Builder in CDMX: Flu Edition"></a>
+<a href="https://dev.to/earlgreyhot1701d"><img src="assets/post-2.svg" width="100%" alt="DEV post: AI Took Me to Three Stages. I Still Don&#x27;t Like Public Speaking."></a>
 
-<a href="https://dev.to/earlgreyhot1701d/from-one-chatbot-to-five-agents-my-aws-agent-engineer-nanodegree-69i"><img src="assets/post-3.svg" width="100%" alt="DEV post: From One Chatbot to Five Agents: My AWS Agent Engineer Nanodegree"></a>
+<a href="https://dev.to/x?a=1&amp;b=2"><img src="assets/post-3.svg" width="100%" alt="DEV post: Tea &amp; &lt;script&gt;alert(1)&lt;/script&gt; &quot;quotes&quot; test with a very very very long title that keeps going well past two full lines of monospace text to check the ellipsis"></a>
 
 💎 **4 Community Gems.** Gems are DEV's human-curated picks. Trusted curators hand out a limited number each day to spotlight work they think deserves a wider audience. No algorithm, just people with taste.
 
@@ -125,9 +125,9 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors">
 
-<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 79 public repos, 63 DEV posts, 1100 DEV reactions, 2077 contributions this year">
+<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 89 public repos, 63 DEV posts, 1450 DEV reactions, 2318 contributions this year">
 
-<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2077 in total">
+<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2318 in total">
 
 <img src="assets/h-orders.svg" width="100%" alt="10 Standing Orders">
 
@@ -151,4 +151,4 @@ I don't write code from scratch. I give creative direction and validation: AI to
 
 <img src="assets/footer.svg" width="100%" alt="End transmission. AI assisted. Human approved. Powered by NLP.">
 
-<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-12.</sub>
+<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: MOCK.</sub>

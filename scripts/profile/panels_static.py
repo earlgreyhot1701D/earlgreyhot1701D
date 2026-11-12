@@ -23,17 +23,19 @@ def header(profile, stats, stardate):
         ("DEV", f"{stats.get('dev_posts', '60+')} POSTS", C["docked"]),
     ]
     chip_svg, cx = [], 36
-    for k, v, col in chips:
+    for n, (k, v, col) in enumerate(chips):
         label = f"{k} "
         cw = int((len(label) + len(v)) * 11 * 0.6 + 24)
         chip_svg.append(
+            f'<g class="chip c{n}">'
             f'<rect x="{cx}" y="214" width="{cw}" height="26" rx="4" fill="{C["panel"]}" stroke="{col}" stroke-opacity="0.7"/>'
-            f'<text x="{cx + 12}" y="231" font-size="11" fill="{C["dim"]}">{esc(label)}<tspan fill="{col}" font-weight="700">{esc(v)}</tspan></text>'
+            f'<text x="{cx + 12}" y="231" font-size="11" fill="{C["dim"]}">{esc(label)}<tspan fill="{col}" font-weight="700">{esc(v)}</tspan></text></g>'
         )
         cx += cw + 10
     body = (
         panel_bg(w, h, 12)
         + "".join(stars)
+        + _flyby(w)
         + brackets(14, 14, w - 28, h - 28, C["accent"])
         + f'<text x="36" y="46" font-size="12" fill="{C["dim"]}" letter-spacing="2">BRIDGE CONSOLE // {esc(profile["handle"].upper())}</text>'
         + f'<text x="{w - 36}" y="46" font-size="12" fill="{C["accent2"]}" text-anchor="end" letter-spacing="2">STARDATE {esc(stardate)}</text>'
@@ -52,9 +54,36 @@ def header(profile, stats, stardate):
   @keyframes tw { 0%,100% { opacity: .15; } 50% { opacity: .95; } }
   .cursor { animation: blink 1s steps(1) infinite; }
   @keyframes blink { 50% { opacity: 0; } }
+  .chip { animation: boot .5s ease-out both; }
+  .c0 { animation-delay: 2.4s; } .c1 { animation-delay: 2.75s; } .c2 { animation-delay: 3.1s; } .c3 { animation-delay: 3.45s; }
+  @keyframes boot { 0% { opacity: .12; } 60% { opacity: 1; filter: brightness(1.8); } 100% { opacity: 1; filter: none; } }
+  .engine { animation: flicker .25s steps(2) infinite; }
+  @keyframes flicker { 50% { opacity: .55; } }
+  @media (prefers-reduced-motion: reduce) { .flyby { display: none; } }
 """
     label = f'{profile["name"]}: {profile["tagline"]} {profile["subtitle"]} Stardate {stardate}.'
     return svg(w, h, body, label, style)
+
+
+FLYBY_CYCLE, FLYBY_FLIGHT = 22.0, 4.0  # seconds per loop, seconds on screen
+
+
+def _flyby(w):
+    """The star chart's scout ship crosses the header now and then. Starts off-screen, so a
+    static render (or reduced motion) shows an empty sky."""
+    frac = FLYBY_FLIGHT / FLYBY_CYCLE
+    return (
+        '<g class="flyby" transform="translate(-60,132)"><g>'
+        f'<animateMotion path="M0,0 L{w + 120},-64" rotate="auto" begin="3.5s" dur="{FLYBY_CYCLE:.0f}s" '
+        f'repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;{frac:.4f};1" calcMode="linear"/>'
+        '<defs><linearGradient id="trail" x1="0" x2="1"><stop offset="0" stop-color="#D97757" stop-opacity="0"/>'
+        '<stop offset="1" stop-color="#D97757" stop-opacity=".7"/></linearGradient></defs>'
+        '<rect x="-58" y="-1.2" width="50" height="2.4" rx="1.2" fill="url(#trail)"/>'
+        f'<g transform="scale(1.4)"><circle class="engine" cx="-6" cy="0" r="2.6" fill="{C["accent2"]}"/>'
+        f'<path d="M10,0 L-6,-5.5 L-3,0 L-6,5.5 Z" fill="{C["text"]}"/>'
+        f'<circle cx="3" cy="0" r="1.4" fill="{C["accent"]}"/></g>'
+        "</g></g>"
+    )
 
 
 def heading(num, title, code):
