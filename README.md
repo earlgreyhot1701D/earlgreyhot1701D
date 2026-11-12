@@ -129,9 +129,9 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors (GitHub Stats)">
 
-<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 79 public repos, 63 DEV posts, 1100 DEV reactions, 2078 contributions this year">
+<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 79 public repos, 63 DEV posts, 1100 DEV reactions, 2079 contributions this year">
 
-<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2078 in total">
+<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2079 in total">
 
 <img src="assets/h-orders.svg" width="100%" alt="10 Standing Orders (How I Work)">
 
