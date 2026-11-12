@@ -52,11 +52,14 @@ def starchart(live):
     out.append(f'<text x="{w - 28}" y="40" font-size="12" fill="{C["live"]}" text-anchor="end">{esc(_fmt(total))} this year</text>')
     if not weeks:
         out.append(f'<text x="{w / 2}" y="{top + 50}" font-size="14" fill="{C["dim"]}" text-anchor="middle">Awaiting signal. Star chart will appear after the next sensor sweep.</text>')
+    shown = weeks[-53:]
     rnd = random.Random(1701)
-    for wi, week in enumerate(weeks[-53:]):
+    stars = {}  # (week, day) -> (x, y, level)
+    for wi, week in enumerate(shown):
         for di, level in enumerate(week):
             cx = left + wi * cell + rnd.uniform(-2, 2)
             cy = top + di * cell + rnd.uniform(-2, 2)
+            stars[(wi, di)] = (cx, cy, level)
             if level == 0:
                 out.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="0.8" fill="{C["line"]}"/>')
             elif level == 4:
@@ -64,15 +67,62 @@ def starchart(live):
                 out.append(_sparkle(round(cx, 1), round(cy, 1), STAR_R[4] * 0.6, STAR_FILL[4], cls))
             else:
                 out.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{STAR_R[level]}" fill="{STAR_FILL[level]}"/>')
+    if shown:
+        out.append(_patrol(shown, stars, cell, top, left))
     out.append(f'<text x="{left - 4}" y="{h - 18}" font-size="11" fill="{C["dim"]}">52 WEEKS AGO</text>')
     out.append(f'<text x="{w - 28}" y="{h - 18}" font-size="11" fill="{C["dim"]}" text-anchor="end">TODAY</text>')
     style = """
   .tw { animation: tw 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
   .tw1 { animation-delay: 1s; } .tw2 { animation-delay: 2s; }
   @keyframes tw { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+  .engine { animation: flicker .25s steps(2) infinite; }
+  @keyframes flicker { 50% { opacity: .55; } }
+  @media (prefers-reduced-motion: reduce) { .ship, .ping { display: none; } }
 """
-    label = f"Star chart of GitHub contributions over the last year: {_fmt(total)} contributions, one star per day."
+    label = (f"Star chart of GitHub contributions over the last year: {_fmt(total)} contributions, one star per day. "
+             "A small scout ship patrols the chart, and each active day flares as it passes.")
     return svg(w, h, "".join(out), label, style)
+
+
+PATROL_MOVE, PATROL_CYCLE = 26.0, 30.0  # seconds flying, seconds per loop (the rest is a pause)
+
+
+def _patrol(shown, stars, cell, top, left):
+    """A scout ship sweeps the grid in a serpentine (down one week, up the next).
+    Every active day flares as the ship passes. Pure SMIL, so it runs inside GitHub's <img>."""
+    route = []
+    for wi, week in enumerate(shown):
+        days = range(len(week)) if wi % 2 == 0 else range(len(week) - 1, -1, -1)
+        route.extend((wi, di) for di in days)
+    n = len(route)
+    sx, sy = left, top
+    pts = [(left + wi * cell - sx, top + di * cell - sy) for wi, di in route]
+    path = "M" + " L".join(f"{x:.0f},{y:.0f}" for x, y in pts)
+    move_frac = PATROL_MOVE / PATROL_CYCLE
+
+    pings = []
+    for k, key in enumerate(route):
+        x, y, level = stars[key]
+        if level == 0:
+            continue
+        f = max(0.001, (k / max(1, n - 1)) * move_frac)
+        f2, f3 = min(f + 0.004, 0.998), min(f + 0.035, 0.999)
+        r = STAR_R[level] + 4
+        pings.append(
+            f'<circle class="ping" cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" fill="none" stroke="{STAR_FILL[4]}" '
+            f'stroke-width="1.2" opacity="0"><animate attributeName="opacity" values="0;0;0.9;0;0" '
+            f'keyTimes="0;{f:.4f};{f2:.4f};{f3:.4f};1" dur="{PATROL_CYCLE:.0f}s" repeatCount="indefinite"/></circle>'
+        )
+    ship = (
+        f'<g class="ship" transform="translate({sx},{sy})"><g>'
+        f'<animateMotion path="{path}" rotate="auto" dur="{PATROL_CYCLE:.0f}s" repeatCount="indefinite" '
+        f'keyPoints="0;1;1" keyTimes="0;{move_frac:.4f};1" calcMode="linear"/>'
+        f'<circle class="engine" cx="-6" cy="0" r="2.6" fill="{C["accent2"]}"/>'
+        f'<path d="M10,0 L-6,-5.5 L-3,0 L-6,5.5 Z" fill="{C["text"]}"/>'
+        f'<circle cx="3" cy="0" r="1.4" fill="{C["accent"]}"/>'
+        f"</g></g>"
+    )
+    return "".join(pings) + ship
 
 
 def transmission(post, is_gem):
