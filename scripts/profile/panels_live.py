@@ -50,13 +50,17 @@ def _sparkle(cx, cy, r, fill, cls):
     return f'<path d="{d}" fill="{fill}"{cls}/>'
 
 
-def starchart(live):
+def starchart(live, worlds=None):
     weeks = live.get("contrib_weeks") or []
-    w, cell, top, left = WIDTH, 14, 62, 52
-    h = top + 7 * cell + 46
+    w, cell, top, left = WIDTH, 14, 98, 52
+    h = top + 6 * cell + 74  # room for planet name tags above and below the grid
     out = [panel_bg(w, h, 12), brackets(10, 10, w - 20, h - 20, C["accent"])]
     out.append(f'<text x="28" y="40" font-size="13" font-weight="700" fill="{C["text"]}" letter-spacing="1.5">STAR CHART</text>')
-    out.append(f'<text x="150" y="40" font-size="11.5" fill="{C["dim"]}">one star per day · brighter = more commits</text>')
+    legend = "one star per day · brighter = more commits ·"
+    out.append(f'<text x="150" y="40" font-size="11.5" fill="{C["dim"]}">{esc(legend)}</text>')
+    lx = 150 + len(legend) * 11.5 * 0.6 + 16
+    out.append(_planet(lx, 36, "shipped", scale=0.8))
+    out.append(f'<text x="{lx + 13:.0f}" y="40" font-size="11.5" fill="{C["accent2"]}">= something I shipped</text>')
     total = live.get("contrib_total")
     out.append(f'<text x="{w - 28}" y="40" font-size="12" fill="{C["live"]}" text-anchor="end">{esc(_fmt(total))} this year</text>')
     if not weeks:
@@ -76,6 +80,8 @@ def starchart(live):
                 out.append(_sparkle(round(cx, 1), round(cy, 1), STAR_R[4] * 0.6, STAR_FILL[4], cls))
             else:
                 out.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{STAR_R[level]}" fill="{STAR_FILL[level]}"/>')
+    placed = _worlds(worlds or [], shown, live.get("contrib_week_starts") or [], cell, top, left, w)
+    out.extend(placed["svg"])
     if shown:
         out.append(_patrol(shown, stars, cell, top, left))
     peak = live.get("contrib_peak") or {}
@@ -100,9 +106,70 @@ def starchart(live):
     label = (f"Star chart of GitHub contributions over the last year: {_fmt(total)} contributions, one star per day. "
              + (f"Brightest star: {_short_date(peak.get('date', ''))} with {peak.get('count')} commits. " if peak.get("count") else "")
              + (f"Longest streak: {streak} days. " if streak else "")
+             + (f"Planets mark things I shipped: {', '.join(placed['names'])}. " if placed["names"] else "")
              + 
              "A small scout ship patrols the chart, and each active day flares as it passes.")
     return svg(w, h, "".join(out), label, style)
+
+
+def _planet(x, y, status, scale=1.0):
+    """Original ringed planet. Shipped = solid; building = dashed outline (under construction)."""
+    r, rx, ry = 4.6 * scale, 9 * scale, 2.8 * scale
+    if status == "building":
+        body = f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" fill="{C["bg"]}" stroke="{C["drydock"]}" stroke-width="1.3" stroke-dasharray="2 1.6"/>'
+        ring_col, dash = C["drydock"], ' stroke-dasharray="2 1.6"'
+    else:
+        body = f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" fill="{C["accent2"]}"/>'
+        ring_col, dash = C["accent"], ""
+    ring = (f'<ellipse cx="{x:.1f}" cy="{y:.1f}" rx="{rx:.1f}" ry="{ry:.1f}" fill="none" stroke="{ring_col}" '
+            f'stroke-width="1.2"{dash} transform="rotate(-18 {x:.1f} {y:.1f})"/>')
+    return body + ring
+
+
+def _worlds(worlds, shown, week_starts, cell, top, left, w):
+    """Place a planet on each shipped project's day, with a name tag in a lane above or below the grid."""
+    from datetime import date, timedelta
+    starts = week_starts[-len(shown):] if shown else []
+    if not starts or len(starts) != len(shown):
+        return {"svg": [], "names": []}
+    try:
+        starts = [date.fromisoformat(d) for d in starts]
+    except ValueError:
+        return {"svg": [], "names": []}
+    spots = []
+    for world in worlds:
+        try:
+            d = date.fromisoformat(world["date"])
+        except (KeyError, ValueError):
+            continue
+        for wi, (st, week) in enumerate(zip(starts, shown)):
+            if st <= d < st + timedelta(days=len(week)):
+                spots.append((left + wi * cell, top + (d - st).days * cell, world))
+                break
+    spots.sort(key=lambda s: s[0])
+    grid_top, grid_bot = top - 8, top + 6 * cell + 8
+    lanes = [("up", top - 18), ("down", grid_bot + 14), ("up", top - 32), ("down", grid_bot + 28)]
+    lane_end = [-1e9] * len(lanes)
+    out, names = [], []
+    for x, y, world in spots:
+        name = world["name"]
+        tw = len(name) * 9.5 * 0.6
+        lx = min(max(x, 28 + tw / 2), w - 28 - tw / 2)
+        for li, (side, ly) in enumerate(lanes):
+            if lx - tw / 2 > lane_end[li] + 8:
+                lane_end[li] = lx + tw / 2
+                break
+        else:
+            continue  # no room: skip the tag rather than overlap
+        anchor_y = grid_top if side == "up" else grid_bot
+        tip_y = ly + 3 if side == "up" else ly - 9
+        col = C["drydock"] if world.get("status") == "building" else C["accent2"]
+        out.append(f'<line x1="{x:.0f}" y1="{y:.0f}" x2="{x:.0f}" y2="{anchor_y:.0f}" stroke="{col}" stroke-opacity=".35" stroke-dasharray="1 2"/>')
+        out.append(f'<line x1="{x:.0f}" y1="{anchor_y:.0f}" x2="{lx:.0f}" y2="{tip_y:.0f}" stroke="{col}" stroke-opacity=".35"/>')
+        out.append(_planet(x, y, world.get("status", "shipped")))
+        out.append(f'<text x="{lx:.0f}" y="{ly:.0f}" font-size="9.5" fill="{col}" text-anchor="middle" letter-spacing=".5">{esc(name)}</text>')
+        names.append(name + (" (in progress)" if world.get("status") == "building" else ""))
+    return {"svg": out, "names": names}
 
 
 PATROL_MOVE, PATROL_CYCLE = 80.0, 86.0  # seconds flying, seconds per loop (the rest is a pause)

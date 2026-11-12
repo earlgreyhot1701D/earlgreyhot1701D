@@ -35,53 +35,229 @@
     "footer": "Launching by Dec 4 · repo: dead-keys"
   },
   "fleet": [
-    {"slug": "observator", "name": "Observator Clew", "role": "Estate Watch", "status": "live", "url": "https://github.com/earlgreyhot1701D/observator-clew",
-     "line": "Creating is becoming nearly free. Maintaining never did. Watches my GitHub estate and learns when not to bother me. Mk II of Daybreak.",
-     "note": "AI Tinkerers, Sep 2026"},
-    {"slug": "two-sisters", "name": "Two Sisters Tinctures", "role": "Built for My Sister", "status": "live", "url": "https://two-sisters-tinctures.onrender.com/",
-     "line": "My little sister is my skincare product whisperer. So I built her a shelf that sorts morning and evening order and flags what shouldn't layer.",
-     "note": "DEV Hacktoberfest, Oct 2026"},
-    {"slug": "clew-directive", "name": "Clew Directive", "role": "AI Learning Paths", "status": "live", "url": "https://clewdirective.com",
-     "line": "Four questions. A personalized path from verified free resources. A PDF you keep forever. No signup, no data stored.",
-     "note": "AWS 10,000 AIdeas Semi-Finalist"},
-    {"slug": "janus", "name": "Janus Clew", "role": "Growth Tracking", "status": "docked", "url": "https://github.com/earlgreyhot1701D/janus-clew",
-     "line": "You shipped three projects in three months. You're better, but can you prove it? Janus measures it. Evidence, not vibes.",
-     "note": "DoraHacks AWS Global Vibe, Winner"},
-    {"slug": "memoria", "name": "Memoria Clew", "role": "Research Memory", "status": "docked", "url": "https://github.com/earlgreyhot1701D/memoria-clew",
-     "line": "Bookmarks don't remember why you saved something. Memoria does, and resurfaces it when it matters again.",
-     "note": "AI Vibe Coding 2026, 4th of 250"},
-    {"slug": "metis", "name": "Metis Clew", "role": "Code Explainer", "status": "live", "url": "https://metis-clew.vercel.app",
-     "line": "What the code does, how it works, and why it was built that way. Validated with career switchers.",
-     "note": "Shipped in 5 weeks"}
+    {
+      "slug": "observator",
+      "name": "Observator Clew",
+      "role": "Estate Watch",
+      "status": "live",
+      "url": "https://github.com/earlgreyhot1701D/observator-clew",
+      "line": "Creating is becoming nearly free. Maintaining never did. Watches my GitHub estate and learns when not to bother me. Mk II of Daybreak.",
+      "note": "AI Tinkerers, Sep 2026"
+    },
+    {
+      "slug": "two-sisters",
+      "name": "Two Sisters Tinctures",
+      "role": "Built for My Sister",
+      "status": "live",
+      "url": "https://two-sisters-tinctures.onrender.com/",
+      "line": "My little sister is my skincare product whisperer. So I built her a shelf that sorts morning and evening order and flags what shouldn't layer.",
+      "note": "DEV Hacktoberfest, Oct 2026"
+    },
+    {
+      "slug": "clew-directive",
+      "name": "Clew Directive",
+      "role": "AI Learning Paths",
+      "status": "live",
+      "url": "https://clewdirective.com",
+      "line": "Four questions. A personalized path from verified free resources. A PDF you keep forever. No signup, no data stored.",
+      "note": "AWS 10,000 AIdeas Semi-Finalist"
+    },
+    {
+      "slug": "janus",
+      "name": "Janus Clew",
+      "role": "Growth Tracking",
+      "status": "docked",
+      "url": "https://github.com/earlgreyhot1701D/janus-clew",
+      "line": "You shipped three projects in three months. You're better, but can you prove it? Janus measures it. Evidence, not vibes.",
+      "note": "DoraHacks AWS Global Vibe, Winner"
+    },
+    {
+      "slug": "memoria",
+      "name": "Memoria Clew",
+      "role": "Research Memory",
+      "status": "docked",
+      "url": "https://github.com/earlgreyhot1701D/memoria-clew",
+      "line": "Bookmarks don't remember why you saved something. Memoria does, and resurfaces it when it matters again.",
+      "note": "AI Vibe Coding 2026, 4th of 250"
+    },
+    {
+      "slug": "metis",
+      "name": "Metis Clew",
+      "role": "Code Explainer",
+      "status": "live",
+      "url": "https://metis-clew.vercel.app",
+      "line": "What the code does, how it works, and why it was built that way. Validated with career switchers.",
+      "note": "Shipped in 5 weeks"
+    }
   ],
   "away": [
-    {"slug": "themis", "name": "Themis Lex", "role": "Court Staff Readiness", "status": "live", "url": "https://themislex.org",
-     "line": "Plain-English AI readiness check for California court staff, as a PDF you can hand your supervisor.",
-     "note": "themislex.org"},
-    {"slug": "porch-light", "name": "Porch Light", "role": "Civic Agent", "status": "docked", "url": "https://github.com/earlgreyhot1701D/porch-light",
-     "line": "Watches city meeting agendas for one resident. English and Spanish, a receipt on every claim. Drafts a comment only a human can send.",
-     "note": "AWS Agents for Humans, Sep 2026"}
+    {
+      "slug": "themis",
+      "name": "Themis Lex",
+      "role": "Court Staff Readiness",
+      "status": "live",
+      "url": "https://themislex.org",
+      "line": "Plain-English AI readiness check for California court staff, as a PDF you can hand your supervisor.",
+      "note": "themislex.org"
+    },
+    {
+      "slug": "porch-light",
+      "name": "Porch Light",
+      "role": "Civic Agent",
+      "status": "docked",
+      "url": "https://github.com/earlgreyhot1701D/porch-light",
+      "line": "Watches city meeting agendas for one resident. English and Spanish, a receipt on every claim. Drafts a comment only a human can send.",
+      "note": "AWS Agents for Humans, Sep 2026"
+    }
   ],
   "commendations": [
-    ["WIN", "DoraHacks AWS Global Vibe Hackathon", "2025", "Winner · Draper U scholarship (Janus Clew)"],
-    ["WIN", "AI Vibe Coding Hackathon", "2026", "Featherless 1st + ElevenLabs Best · 4th of 250"],
-    ["WIN", "DEV WeCoded Challenge", "2026", "Winner"],
-    ["WIN", "DEV April Fools Challenge", "2026", "Best Use of Google AI (Steep)"],
-    ["HONOR", "AWS 10,000 AIdeas", "2026", "Semi-Finalist (Clew Directive)"],
-    ["HONOR", "CCC AI Summer Camp, Cal Poly DxHub/AWS", "2025", "2nd of 14 · 1 of 100 from 1,300"],
-    ["TALK", "NACM 2026 Midyear Conference", "2026", "Building Bridges: Enabling Staff Innovation"],
-    ["TALK", "Los Angeles Superior Court", "2026", "Invited: AI adoption for court staff"]
+    [
+      "WIN",
+      "DoraHacks AWS Global Vibe Hackathon",
+      "2025",
+      "Winner · Draper U scholarship (Janus Clew)"
+    ],
+    [
+      "WIN",
+      "AI Vibe Coding Hackathon",
+      "2026",
+      "Featherless 1st + ElevenLabs Best · 4th of 250"
+    ],
+    [
+      "WIN",
+      "DEV WeCoded Challenge",
+      "2026",
+      "Winner"
+    ],
+    [
+      "WIN",
+      "DEV April Fools Challenge",
+      "2026",
+      "Best Use of Google AI (Steep)"
+    ],
+    [
+      "HONOR",
+      "AWS 10,000 AIdeas",
+      "2026",
+      "Semi-Finalist (Clew Directive)"
+    ],
+    [
+      "HONOR",
+      "CCC AI Summer Camp, Cal Poly DxHub/AWS",
+      "2025",
+      "2nd of 14 · 1 of 100 from 1,300"
+    ],
+    [
+      "TALK",
+      "NACM 2026 Midyear Conference",
+      "2026",
+      "Building Bridges: Enabling Staff Innovation"
+    ],
+    [
+      "TALK",
+      "Los Angeles Superior Court",
+      "2026",
+      "Invited: AI adoption for court staff"
+    ]
   ],
   "links": [
-    {"slug": "site", "label": "CLEWLABS.ORG", "sub": "portfolio", "url": "https://clewlabs.org"},
-    {"slug": "dev", "label": "DEV.TO", "sub": "writing", "url": "https://dev.to/earlgreyhot1701d"},
-    {"slug": "linkedin", "label": "LINKEDIN", "sub": "connect", "url": "https://www.linkedin.com/in/la-shara-cordero-a0017a11/"},
-    {"slug": "substack", "label": "FORUM FILES", "sub": "substack", "url": "https://theforumfiles.substack.com/"},
-    {"slug": "email", "label": "EMAIL", "sub": "hail me", "url": "mailto:lsjcordero@gmail.com"}
+    {
+      "slug": "site",
+      "label": "CLEWLABS.ORG",
+      "sub": "portfolio",
+      "url": "https://clewlabs.org"
+    },
+    {
+      "slug": "dev",
+      "label": "DEV.TO",
+      "sub": "writing",
+      "url": "https://dev.to/earlgreyhot1701d"
+    },
+    {
+      "slug": "linkedin",
+      "label": "LINKEDIN",
+      "sub": "connect",
+      "url": "https://www.linkedin.com/in/la-shara-cordero-a0017a11/"
+    },
+    {
+      "slug": "substack",
+      "label": "FORUM FILES",
+      "sub": "substack",
+      "url": "https://theforumfiles.substack.com/"
+    },
+    {
+      "slug": "email",
+      "label": "EMAIL",
+      "sub": "hail me",
+      "url": "mailto:lsjcordero@gmail.com"
+    }
   ],
   "gem_slugs": [
     "ai-took-me-to-three-stages-i-still-dont-like-public-speaking-1g38",
     "my-agents-never-get-tired-i-do-on-satisficing-1mb",
     "block-zero-oh-no-claude-kiro-and-i-over-engineered-the-throwaway-5d42"
+  ],
+  "worlds_note": "Planets on the star chart. date = when work began (repo creation date by default). Edit freely; status: shipped or building.",
+  "worlds": [
+    {
+      "name": "Janus",
+      "date": "2025-11-09",
+      "status": "shipped"
+    },
+    {
+      "name": "Metis",
+      "date": "2025-11-22",
+      "status": "shipped"
+    },
+    {
+      "name": "Memoria",
+      "date": "2026-01-30",
+      "status": "shipped"
+    },
+    {
+      "name": "Clew Directive",
+      "date": "2026-02-15",
+      "status": "shipped"
+    },
+    {
+      "name": "Steep",
+      "date": "2026-04-04",
+      "status": "shipped"
+    },
+    {
+      "name": "Themis Lex",
+      "date": "2026-05-10",
+      "status": "shipped"
+    },
+    {
+      "name": "Agentis Lux",
+      "date": "2026-05-31",
+      "status": "shipped"
+    },
+    {
+      "name": "Verity Lex",
+      "date": "2026-07-18",
+      "status": "shipped"
+    },
+    {
+      "name": "Porch Light",
+      "date": "2026-08-24",
+      "status": "shipped"
+    },
+    {
+      "name": "Observator",
+      "date": "2026-09-11",
+      "status": "shipped"
+    },
+    {
+      "name": "Two Sisters",
+      "date": "2026-10-02",
+      "status": "shipped"
+    },
+    {
+      "name": "Dead Keys",
+      "date": "2026-11-11",
+      "status": "building"
+    }
   ]
 }

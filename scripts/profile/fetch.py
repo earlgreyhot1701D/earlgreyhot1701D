@@ -76,7 +76,8 @@ def fetch_contributions(login):
         run = run + 1 if count > 0 else 0
         longest = max(longest, run)
     return {"contrib_total": int(cal["totalContributions"]), "contrib_weeks": weeks,
-            "contrib_peak": {"date": peak_date, "count": peak}, "contrib_longest_streak": longest}
+            "contrib_peak": {"date": peak_date, "count": peak}, "contrib_longest_streak": longest,
+            "contrib_week_starts": [w["contributionDays"][0]["date"] for w in cal["weeks"] if w["contributionDays"]]}
 
 
 def gather(profile, cache_path):

@@ -64,7 +64,7 @@ def main(mock=False):
     write("commendations.svg", static_p.commendations(profile["commendations"]))
     write("footer.svg", static_p.footer())
     write("stats.svg", live_p.stats(live))
-    write("starchart.svg", live_p.starchart(live))
+    write("starchart.svg", live_p.starchart(live, profile.get("worlds")))
 
     gems = set(profile.get("gem_slugs", []))
     tx_md = []
