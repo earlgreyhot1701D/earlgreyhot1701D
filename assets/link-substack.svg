@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="64" viewBox="0 0 160 64" role="img" aria-label="Forum Files (substack)"><title>Forum Files (substack)</title><style>
+  text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace; }
+  .pulse { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes pulse { 0%,100% { opacity: .15; transform: scale(1); } 50% { opacity: .45; transform: scale(1.5); } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style><rect width="160" height="64" rx="8" fill="#0b0f1a"/><rect x="0.5" y="0.5" width="159" height="63" rx="8" fill="none" stroke="#2d3748"/><path d="M0,10 Q0,0 10,0 L14,0 L14,64 L10,64 Q0,64 0,54 Z" fill="#9B59B6"/><text x="28" y="30" font-size="13" font-weight="700" fill="#e6edf3" letter-spacing="1">FORUM FILES</text><text x="28" y="48" font-size="11" fill="#8b949e">substack</text><text x="146" y="48" font-size="14" fill="#D97757" text-anchor="end">&gt;</text></svg>

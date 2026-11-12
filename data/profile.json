@@ -1,0 +1,87 @@
+{
+  "handle": "earlgreyhot1701D",
+  "devto_user": "earlgreyhot1701d",
+  "name": "L. CORDERO",
+  "tagline": "Court operator who builds.",
+  "subtitle": "Auditable AI for courts and the people they serve.",
+  "primary": {
+    "label": "PRIMARY MISSION",
+    "name": "Verity Lex",
+    "status": "live",
+    "url": "https://verity-lex.vercel.app",
+    "hook": "Everyone is selling AI to government. Who has checked whether government is ready to buy?",
+    "body": "Scores a California superior court's AI readiness from its own public record, against Rule of Court 10.430, Gov. Code 68150, and Rule of Court 10.500. An agentic scan gathers evidence. A deterministic rule engine assigns the score. The AI reads the record. It never assigns the score.",
+    "stack": "Next.js · TypeScript · GPT-5.6 · Codex · Tavily · Docker · Vercel",
+    "footer": "OpenAI Build Week 2026 · verity-lex.vercel.app"
+  },
+  "second": {
+    "label": "SECOND IN COMMAND",
+    "name": "Agentis Lux",
+    "status": "live",
+    "url": "https://agentislux.io",
+    "hook": "Your website has a second audience now: AI agents.",
+    "body": "Shows what retrieval agents experience when they read your site. Paste a URL or an OpenAPI spec, get one report across six categories for frontend and API. Findings, not fixes. Full CI, smoke-tested deploys, SSRF hardening on every redirect hop.",
+    "stack": "Next.js · TypeScript · AWS Lambda · CDK · Bedrock · DynamoDB",
+    "footer": "H0: Hack the Zero Stack, June 2026 · agentislux.io"
+  },
+  "drydock": {
+    "label": "IN DRYDOCK",
+    "name": "Dead Keys",
+    "status": "drydock",
+    "url": "https://github.com/earlgreyhot1701D/dead-keys",
+    "hook": "A typing game, back from the dead.",
+    "body": "In 2000, almost half of US high school grads took a typing class. By 2019 it was 2.5%. Dead Keys rebuilds the 1980s typing games I grew up on as a trainer that notices which keys you miss and drills them. It picks up where Office Keys left off.",
+    "stack": "Built with Kiro · Kiroween 2026, Resurrection",
+    "footer": "Launching by Dec 4 · repo: dead-keys"
+  },
+  "fleet": [
+    {"slug": "observator", "name": "Observator Clew", "role": "Estate Watch", "status": "live", "url": "https://github.com/earlgreyhot1701D/observator-clew",
+     "line": "Creating is becoming nearly free. Maintaining never did. Watches my GitHub estate and learns when not to bother me. Mk II of Daybreak.",
+     "note": "AI Tinkerers, Sep 2026"},
+    {"slug": "two-sisters", "name": "Two Sisters Tinctures", "role": "Built for My Sister", "status": "live", "url": "https://two-sisters-tinctures.onrender.com/",
+     "line": "My little sister is my skincare product whisperer. So I built her a shelf that sorts morning and evening order and flags what shouldn't layer.",
+     "note": "DEV Hacktoberfest, Oct 2026"},
+    {"slug": "clew-directive", "name": "Clew Directive", "role": "AI Learning Paths", "status": "live", "url": "https://clewdirective.com",
+     "line": "Four questions. A personalized path from verified free resources. A PDF you keep forever. No signup, no data stored.",
+     "note": "AWS 10,000 AIdeas Semi-Finalist"},
+    {"slug": "janus", "name": "Janus Clew", "role": "Growth Tracking", "status": "docked", "url": "https://github.com/earlgreyhot1701D/janus-clew",
+     "line": "You shipped three projects in three months. You're better, but can you prove it? Janus measures it. Evidence, not vibes.",
+     "note": "DoraHacks AWS Global Vibe, Winner"},
+    {"slug": "memoria", "name": "Memoria Clew", "role": "Research Memory", "status": "docked", "url": "https://github.com/earlgreyhot1701D/memoria-clew",
+     "line": "Bookmarks don't remember why you saved something. Memoria does, and resurfaces it when it matters again.",
+     "note": "AI Vibe Coding 2026, 4th of 250"},
+    {"slug": "metis", "name": "Metis Clew", "role": "Code Explainer", "status": "live", "url": "https://metis-clew.vercel.app",
+     "line": "What the code does, how it works, and why it was built that way. Validated with career switchers.",
+     "note": "Shipped in 5 weeks"}
+  ],
+  "away": [
+    {"slug": "themis", "name": "Themis Lex", "role": "Court Staff Readiness", "status": "live", "url": "https://themislex.org",
+     "line": "Plain-English AI readiness check for California court staff, as a PDF you can hand your supervisor.",
+     "note": "themislex.org"},
+    {"slug": "porch-light", "name": "Porch Light", "role": "Civic Agent", "status": "docked", "url": "https://github.com/earlgreyhot1701D/porch-light",
+     "line": "Watches city meeting agendas for one resident. English and Spanish, a receipt on every claim. Drafts a comment only a human can send.",
+     "note": "AWS Agents for Humans, Sep 2026"}
+  ],
+  "commendations": [
+    ["WIN", "DoraHacks AWS Global Vibe Hackathon", "2025", "Winner · Draper U scholarship (Janus Clew)"],
+    ["WIN", "AI Vibe Coding Hackathon", "2026", "Featherless 1st + ElevenLabs Best · 4th of 250"],
+    ["WIN", "DEV WeCoded Challenge", "2026", "Winner"],
+    ["WIN", "DEV April Fools Challenge", "2026", "Best Use of Google AI (Steep)"],
+    ["HONOR", "AWS 10,000 AIdeas", "2026", "Semi-Finalist (Clew Directive)"],
+    ["HONOR", "CCC AI Summer Camp, Cal Poly DxHub/AWS", "2025", "2nd of 14 · 1 of 100 from 1,300"],
+    ["TALK", "NACM 2026 Midyear Conference", "2026", "Building Bridges: Enabling Staff Innovation"],
+    ["TALK", "Los Angeles Superior Court", "2026", "Invited: AI adoption for court staff"]
+  ],
+  "links": [
+    {"slug": "site", "label": "CLEWLABS.ORG", "sub": "portfolio", "url": "https://clewlabs.org"},
+    {"slug": "dev", "label": "DEV.TO", "sub": "writing", "url": "https://dev.to/earlgreyhot1701d"},
+    {"slug": "linkedin", "label": "LINKEDIN", "sub": "connect", "url": "https://www.linkedin.com/in/la-shara-cordero-a0017a11/"},
+    {"slug": "substack", "label": "FORUM FILES", "sub": "substack", "url": "https://theforumfiles.substack.com/"},
+    {"slug": "email", "label": "EMAIL", "sub": "hail me", "url": "mailto:cordero.lsj@gmail.com"}
+  ],
+  "gem_slugs": [
+    "ai-took-me-to-three-stages-i-still-dont-like-public-speaking-1g38",
+    "my-agents-never-get-tired-i-do-on-satisficing-1mb",
+    "block-zero-oh-no-claude-kiro-and-i-over-engineered-the-throwaway-5d42"
+  ]
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="120" viewBox="0 0 840 120" role="img" aria-label="End transmission. AI assisted. Human approved. Powered by NLP."><title>End transmission. AI assisted. Human approved. Powered by NLP.</title><style>
+  text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace; }
+  .pulse { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes pulse { 0%,100% { opacity: .15; transform: scale(1); } 50% { opacity: .45; transform: scale(1.5); } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+
+  .cursor { animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+</style><rect width="840" height="120" rx="12" fill="#0b0f1a"/><rect x="0.5" y="0.5" width="839" height="119" rx="12" fill="none" stroke="#2d3748"/><path d="M24,10 L10,10 L10,24 M816,10 L830,10 L830,24 M24,110 L10,110 L10,96 M816,110 L830,110 L830,96" fill="none" stroke="#9B59B6" stroke-width="2"/><text x="420.0" y="52" font-size="20" fill="#9B59B6" text-anchor="middle" letter-spacing="3">&gt; END TRANSMISSION<tspan class="cursor">_</tspan></text><text x="420.0" y="80" font-size="12.5" fill="#e6edf3" text-anchor="middle">AI assisted. Human approved. Powered by NLP. All mistakes are mine.</text><text x="420.0" y="100" font-size="11.5" fill="#8b949e" text-anchor="middle">Home port Ventura · on duty in Santa Barbara · earl grey, hot</text></svg>
