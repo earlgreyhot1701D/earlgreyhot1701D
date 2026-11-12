@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="180" viewBox="0 0 800 180" role="img" aria-label="Latest DEV posts">
+<style>
+  .bg { fill: #0d1117; }
+  .head { fill: #9B59B6; font: 600 18px monospace; }
+  .row { fill: #e6edf3; font: 15px monospace; }
+  .meta { fill: #8b949e; font: 12px monospace; }
+</style>
+<rect class="bg" width="800" height="180" rx="10"/>
+<text x="24" y="38" class="head">&gt; LATEST TRANSMISSIONS FROM DEV</text>
+<text x="24" y="70" class="row">Nov 11  A Small Laptop Is a Full Build Kit: Bootstrapping with a Chromebook, …</text><text x="24" y="100" class="row">Nov 8  A Builder in CDMX: Flu Edition</text><text x="24" y="130" class="row">Oct 30  From One Chatbot to Five Agents: My AWS Agent Engineer Nanodegree</text>
+<text x="24" y="168" class="meta">status: ok · drawn 2026-11-12 19:07 UTC</text>
+</svg>
