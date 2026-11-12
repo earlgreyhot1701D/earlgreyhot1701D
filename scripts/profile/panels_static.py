@@ -15,7 +15,7 @@ def header(profile, stats, stardate):
         cls = f' class="tw tw{i % 3}"' if i % 4 == 0 else ""
         stars.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r}" fill="#ffffff" opacity="0.55"{cls}/>')
     typed = "> TEA. EARL GREY. HOT."
-    typed_w = len(typed) * 22 * 0.6 + 4
+    typed_w = (len(typed) + 2) * 22 * 0.6 + 4  # room for the cursor glyph
     chips = [
         ("STATUS", "ON DUTY", C["live"]),
         ("HOME PORT", "CA COURTS", C["accent"]),
@@ -40,8 +40,7 @@ def header(profile, stats, stardate):
         + f'<line x1="36" y1="58" x2="{w - 36}" y2="58" stroke="{C["line"]}"/>'
         + '<clipPath id="type"><rect x="34" y="70" height="34" width="' + f"{typed_w:.0f}" + '">'
         + f'<animate attributeName="width" values="0;{typed_w:.0f}" dur="2.2s" fill="freeze"/></rect></clipPath>'
-        + f'<text x="36" y="96" font-size="22" fill="{C["accent"]}" clip-path="url(#type)">{esc(typed)}</text>'
-        + f'<rect x="{36 + typed_w:.0f}" y="78" width="12" height="22" fill="{C["accent"]}" class="cursor"/>'
+        + f'<text x="36" y="96" font-size="22" fill="{C["accent"]}" clip-path="url(#type)">{esc(typed)}<tspan class="cursor">█</tspan></text>'
         + f'<text x="36" y="152" font-size="44" font-weight="700" fill="{C["text"]}" letter-spacing="3">{esc(profile["name"])}</text>'
         + f'<text x="36" y="182" font-size="17" fill="{C["accent2"]}">{esc(profile["tagline"])}</text>'
         + f'<text x="36" y="202" font-size="12.5" fill="{C["dim"]}">{esc(profile["subtitle"])}</text>'
