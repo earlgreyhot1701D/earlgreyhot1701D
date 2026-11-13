@@ -1,35 +1,35 @@
 {
- "dev_posts": 63,
- "dev_reactions": 1100,
+ "dev_posts": 65,
+ "dev_reactions": 1145,
  "latest": [
+  {
+   "title": "One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)",
+   "url": "https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
+   "slug": "one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
+   "date": "Nov 13",
+   "reactions": 17,
+   "comments": 2
+  },
+  {
+   "title": "Four Applications and One Ask. Guess Which One Scared Me.",
+   "url": "https://dev.to/earlgreyhot1701d/four-applications-and-one-ask-guess-which-one-scared-me-2ia3",
+   "slug": "four-applications-and-one-ask-guess-which-one-scared-me-2ia3",
+   "date": "Nov 12",
+   "reactions": 27,
+   "comments": 19
+  },
   {
    "title": "A Small Laptop Is a Full Build Kit: Bootstrapping with a Chromebook, Claude, and GitHub",
    "url": "https://dev.to/earlgreyhot1701d/a-small-laptop-is-a-full-build-kit-bootstrapping-with-a-chromebook-claude-and-github-4j16",
    "slug": "a-small-laptop-is-a-full-build-kit-bootstrapping-with-a-chromebook-claude-and-github-4j16",
    "date": "Nov 11",
    "reactions": 23,
-   "comments": 7
-  },
-  {
-   "title": "A Builder in CDMX: Flu Edition",
-   "url": "https://dev.to/earlgreyhot1701d/a-builder-in-cdmx-flu-edition-167",
-   "slug": "a-builder-in-cdmx-flu-edition-167",
-   "date": "Nov 8",
-   "reactions": 37,
-   "comments": 20
-  },
-  {
-   "title": "From One Chatbot to Five Agents: My AWS Agent Engineer Nanodegree",
-   "url": "https://dev.to/earlgreyhot1701d/from-one-chatbot-to-five-agents-my-aws-agent-engineer-nanodegree-69i",
-   "slug": "from-one-chatbot-to-five-agents-my-aws-agent-engineer-nanodegree-69i",
-   "date": "Oct 30",
-   "reactions": 24,
-   "comments": 20
+   "comments": 9
   }
  ],
  "public_repos": 79,
  "followers": 12,
- "contrib_total": 2079,
+ "contrib_total": 2102,
  "contrib_weeks": [
   [
    1,
@@ -504,10 +504,11 @@
    0,
    1,
    4,
+   2,
    1
   ]
  ],
- "fetched_at": "2026-11-12",
+ "fetched_at": "2026-11-13",
  "contrib_peak": {
   "date": "2026-05-02",
   "count": 212
