@@ -1,22 +1,22 @@
 {
  "dev_posts": 65,
- "dev_reactions": 1145,
+ "dev_reactions": 1158,
  "latest": [
   {
    "title": "One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)",
    "url": "https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
    "slug": "one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
    "date": "Nov 13",
-   "reactions": 17,
-   "comments": 2
+   "reactions": 27,
+   "comments": 17
   },
   {
    "title": "Four Applications and One Ask. Guess Which One Scared Me.",
    "url": "https://dev.to/earlgreyhot1701d/four-applications-and-one-ask-guess-which-one-scared-me-2ia3",
    "slug": "four-applications-and-one-ask-guess-which-one-scared-me-2ia3",
    "date": "Nov 12",
-   "reactions": 27,
-   "comments": 19
+   "reactions": 30,
+   "comments": 28
   },
   {
    "title": "A Small Laptop Is a Full Build Kit: Bootstrapping with a Chromebook, Claude, and GitHub",
@@ -27,9 +27,9 @@
    "comments": 9
   }
  ],
- "public_repos": 79,
+ "public_repos": 80,
  "followers": 12,
- "contrib_total": 2102,
+ "contrib_total": 2120,
  "contrib_weeks": [
   [
    1,
@@ -505,10 +505,11 @@
    1,
    4,
    2,
+   2,
    1
   ]
  ],
- "fetched_at": "2026-11-13",
+ "fetched_at": "2026-11-14",
  "contrib_peak": {
   "date": "2026-05-02",
   "count": 212
