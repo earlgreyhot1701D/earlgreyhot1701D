@@ -51,7 +51,7 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 | [Daybreak](https://github.com/earlgreyhot1701D/daybreak) | Always-on AWS agent that tracked everything I ship. Mk I of Observator | 🔵 |
 | [Hermes Clew](https://github.com/earlgreyhot1701D/hermes-clew) | Agent readiness scanner, the proof of concept that became Agentis Lux | 🔵 |
 | [Anton Clew](https://github.com/earlgreyhot1701D/anton-clew) | Policy CLI that classifies AI file changes as DENY, NEEDS_APPROVAL, or ALLOW | 🔵 |
-| [README Clew](https://github.com/earlgreyhot1701D/readme-clew) | Audits your README against your code. I run it on mine. It finds things | 🔵 |
+| [README Clew](https://github.com/earlgreyhot1701D/readme-clew) | The first version of README Clew 2. I run it on mine. It found things | 🔵 |
 | [TicketGlass](https://github.com/earlgreyhot1701D/ticketglass) | Transparency for IT support tickets | 🔵 |
 | [Athena Clew](https://github.com/earlgreyhot1701D/Athena-Clew) | Autonomous debugging agent on Gemini 3 | 🔵 |
 | [Argus Clew](https://github.com/earlgreyhot1701D/argus-clew) | Agent-readiness review on every AWS commit | 🔵 |

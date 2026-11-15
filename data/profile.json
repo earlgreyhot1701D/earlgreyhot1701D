@@ -36,6 +36,15 @@
   },
   "fleet": [
     {
+      "slug": "ghost-rovers",
+      "name": "Ghost Rovers",
+      "role": "Kids' Space Console",
+      "status": "live",
+      "url": "https://earlgreyhot1701d.github.io/ghost-rovers/",
+      "line": "12 machines are still on the Moon and Mars. Only 1 still answers. A 1969 Mission Control console where kids radio what NASA left behind.",
+      "note": "NASA Space Apps Challenge 2026"
+    },
+    {
       "slug": "observator",
       "name": "Observator Clew",
       "role": "Estate Watch",
@@ -61,6 +70,15 @@
       "url": "https://clewdirective.com",
       "line": "Four questions. A personalized path from verified free resources. A PDF you keep forever. No signup, no data stored.",
       "note": "AWS 10,000 AIdeas Semi-Finalist"
+    },
+    {
+      "slug": "readme-clew-2",
+      "name": "README Clew 2",
+      "role": "README Audit",
+      "status": "live",
+      "url": "https://readme-clew-2.vercel.app",
+      "line": "READMEs drift. Paste a repo, get a claim ledger: every checkable README line, what the code says, and who decided.",
+      "note": "AdaL What Would Jev Do? hackathon, Oct 2026"
     },
     {
       "slug": "janus",
@@ -266,10 +284,22 @@
       "repo": "two-sisters-tinctures"
     },
     {
+      "name": "README Clew 2",
+      "date": "2026-10-08",
+      "status": "shipped",
+      "repo": "readme-clew-2"
+    },
+    {
       "name": "Dead Keys",
       "date": "2026-11-11",
       "status": "building",
       "repo": "dead-keys"
+    },
+    {
+      "name": "Ghost Rovers",
+      "date": "2026-11-14",
+      "status": "shipped",
+      "repo": "ghost-rovers"
     }
   ]
 }
