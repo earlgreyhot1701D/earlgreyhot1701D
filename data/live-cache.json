@@ -1,45 +1,36 @@
 {
- "dev_posts": 65,
- "dev_reactions": 1158,
+ "dev_posts": 66,
+ "dev_reactions": 1206,
  "latest": [
+  {
+   "title": "Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.",
+   "url": "https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
+   "slug": "ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
+   "date": "Nov 15",
+   "reactions": 30,
+   "comments": 5
+  },
   {
    "title": "One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)",
    "url": "https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
    "slug": "one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
    "date": "Nov 13",
-   "reactions": 27,
-   "comments": 17
+   "reactions": 30,
+   "comments": 22
   },
   {
    "title": "Four Applications and One Ask. Guess Which One Scared Me.",
    "url": "https://dev.to/earlgreyhot1701d/four-applications-and-one-ask-guess-which-one-scared-me-2ia3",
    "slug": "four-applications-and-one-ask-guess-which-one-scared-me-2ia3",
    "date": "Nov 12",
-   "reactions": 30,
-   "comments": 28
-  },
-  {
-   "title": "A Small Laptop Is a Full Build Kit: Bootstrapping with a Chromebook, Claude, and GitHub",
-   "url": "https://dev.to/earlgreyhot1701d/a-small-laptop-is-a-full-build-kit-bootstrapping-with-a-chromebook-claude-and-github-4j16",
-   "slug": "a-small-laptop-is-a-full-build-kit-bootstrapping-with-a-chromebook-claude-and-github-4j16",
-   "date": "Nov 11",
-   "reactions": 23,
-   "comments": 9
+   "reactions": 41,
+   "comments": 38
   }
  ],
  "public_repos": 80,
- "followers": 12,
- "contrib_total": 2120,
+ "followers": 13,
+ "contrib_total": 2148,
  "contrib_weeks": [
-  [
-   1,
-   1,
-   2,
-   1,
-   0,
-   1,
-   3
-  ],
   [
    1,
    1,
@@ -506,17 +497,19 @@
    4,
    2,
    2,
+   2
+  ],
+  [
    1
   ]
  ],
- "fetched_at": "2026-11-14",
+ "fetched_at": "2026-11-15",
  "contrib_peak": {
   "date": "2026-05-02",
   "count": 212
  },
  "contrib_longest_streak": 7,
  "contrib_week_starts": [
-  "2025-11-09",
   "2025-11-16",
   "2025-11-23",
   "2025-11-30",
@@ -568,7 +561,8 @@
   "2026-10-18",
   "2026-10-25",
   "2026-11-01",
-  "2026-11-08"
+  "2026-11-08",
+  "2026-11-15"
  ],
  "topic_worlds": []
 }

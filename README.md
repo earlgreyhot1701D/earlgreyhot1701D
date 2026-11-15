@@ -36,9 +36,11 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 <img src="assets/h-fleet.svg" width="100%" alt="05 Active Fleet (Projects)">
 
 <p align="center">
+<a href="https://earlgreyhot1701d.github.io/ghost-rovers/"><img src="assets/card-ghost-rovers.svg" width="49%" alt="Ghost Rovers, Kids&#x27; Space Console: 12 machines are still on the Moon and Mars. Only 1 still answers. A 1969 Mission Control console where kids radio what NASA left behind."></a>
 <a href="https://github.com/earlgreyhot1701D/observator-clew"><img src="assets/card-observator.svg" width="49%" alt="Observator Clew, Estate Watch: Creating is becoming nearly free. Maintaining never did. Watches my GitHub estate and learns when not to bother me. Mk II of Daybreak."></a>
 <a href="https://two-sisters-tinctures.onrender.com/"><img src="assets/card-two-sisters.svg" width="49%" alt="Two Sisters Tinctures, Built for My Sister: My little sister is my skincare product whisperer. So I built her a shelf that sorts morning and evening order and flags what shouldn&#x27;t layer."></a>
 <a href="https://clewdirective.com"><img src="assets/card-clew-directive.svg" width="49%" alt="Clew Directive, AI Learning Paths: Four questions. A personalized path from verified free resources. A PDF you keep forever. No signup, no data stored."></a>
+<a href="https://readme-clew-2.vercel.app"><img src="assets/card-readme-clew-2.svg" width="49%" alt="README Clew 2, README Audit: READMEs drift. Paste a repo, get a claim ledger: every checkable README line, what the code says, and who decided."></a>
 <a href="https://github.com/earlgreyhot1701D/janus-clew"><img src="assets/card-janus.svg" width="49%" alt="Janus Clew, Growth Tracking: You shipped three projects in three months. You&#x27;re better, but can you prove it? Janus measures it. Evidence, not vibes."></a>
 <a href="https://github.com/earlgreyhot1701D/memoria-clew"><img src="assets/card-memoria.svg" width="49%" alt="Memoria Clew, Research Memory: Bookmarks don&#x27;t remember why you saved something. Memoria does, and resurfaces it when it matters again."></a>
 <a href="https://metis-clew.vercel.app"><img src="assets/card-metis.svg" width="49%" alt="Metis Clew, Code Explainer: What the code does, how it works, and why it was built that way. Validated with career switchers."></a>
@@ -56,7 +58,7 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 | [Daybreak](https://github.com/earlgreyhot1701D/daybreak) | Always-on AWS agent that tracked everything I ship. Mk I of Observator | 🔵 |
 | [Hermes Clew](https://github.com/earlgreyhot1701D/hermes-clew) | Agent readiness scanner, the proof of concept that became Agentis Lux | 🔵 |
 | [Anton Clew](https://github.com/earlgreyhot1701D/anton-clew) | Policy CLI that classifies AI file changes as DENY, NEEDS_APPROVAL, or ALLOW | 🔵 |
-| [README Clew](https://github.com/earlgreyhot1701D/readme-clew) | Audits your README against your code. I run it on mine. It finds things | 🔵 |
+| [README Clew](https://github.com/earlgreyhot1701D/readme-clew) | The first version of README Clew 2. I run it on mine. It found things | 🔵 |
 | [TicketGlass](https://github.com/earlgreyhot1701D/ticketglass) | Transparency for IT support tickets | 🔵 |
 | [Athena Clew](https://github.com/earlgreyhot1701D/Athena-Clew) | Autonomous debugging agent on Gemini 3 | 🔵 |
 | [Argus Clew](https://github.com/earlgreyhot1701D/argus-clew) | Agent-readiness review on every AWS commit | 🔵 |
@@ -101,11 +103,11 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-transmissions.svg" width="100%" alt="08 Transmissions from DEV (Writing)">
 
-<a href="https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h"><img src="assets/post-1.svg" width="100%" alt="DEV post: One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)"></a>
+<a href="https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575"><img src="assets/post-1.svg" width="100%" alt="DEV post: Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up."></a>
 
-<a href="https://dev.to/earlgreyhot1701d/four-applications-and-one-ask-guess-which-one-scared-me-2ia3"><img src="assets/post-2.svg" width="100%" alt="DEV post: Four Applications and One Ask. Guess Which One Scared Me."></a>
+<a href="https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h"><img src="assets/post-2.svg" width="100%" alt="DEV post: One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)"></a>
 
-<a href="https://dev.to/earlgreyhot1701d/a-small-laptop-is-a-full-build-kit-bootstrapping-with-a-chromebook-claude-and-github-4j16"><img src="assets/post-3.svg" width="100%" alt="DEV post: A Small Laptop Is a Full Build Kit: Bootstrapping with a Chromebook, Claude, and GitHub"></a>
+<a href="https://dev.to/earlgreyhot1701d/four-applications-and-one-ask-guess-which-one-scared-me-2ia3"><img src="assets/post-3.svg" width="100%" alt="DEV post: Four Applications and One Ask. Guess Which One Scared Me."></a>
 
 💎 **4 Community Gems.** Gems are DEV's human-curated picks. Trusted curators hand out a limited number each day to spotlight work they think deserves a wider audience. No algorithm, just people with taste.
 
@@ -129,9 +131,9 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors (GitHub Stats)">
 
-<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 80 public repos, 65 DEV posts, 1158 DEV reactions, 2120 contributions this year">
+<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 80 public repos, 66 DEV posts, 1206 DEV reactions, 2148 contributions this year">
 
-<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2120 in total">
+<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2148 in total">
 
 <img src="assets/h-orders.svg" width="100%" alt="10 Standing Orders (How I Work)">
 
@@ -155,4 +157,4 @@ I don't write code from scratch. I give creative direction and validation: AI to
 
 <img src="assets/footer.svg" width="100%" alt="End transmission. AI assisted. Human approved. Powered by NLP.">
 
-<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-14.</sub>
+<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-15.</sub>
