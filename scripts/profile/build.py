@@ -72,6 +72,8 @@ def main(mock=False):
     write("mission-verity.svg", static_p.mission_card(profile["primary"]))
     write("mission-agentis.svg", static_p.mission_card(profile["second"]))
     write("mission-deadkeys.svg", static_p.mission_card(profile["drydock"]))
+    if profile.get("drydock_2"):
+        write("mission-iris.svg", static_p.mission_card(profile["drydock_2"]))
     for f in profile["fleet"] + profile["away"]:
         write(f"card-{f['slug']}.svg", static_p.fleet_card(f))
     for link in profile["links"]:
@@ -108,6 +110,7 @@ def main(mock=False):
         "header_alt": alt(f'{m["name"]}: {m["tagline"]} {m["subtitle"]}'),
         "alt_verity": alt(f'Primary mission: Verity Lex, live. {m["primary"]["hook"]} {m["primary"]["body"]}'),
         "alt_agentis": alt(f'Second in command: Agentis Lux, live. {m["second"]["hook"]} {m["second"]["body"]}'),
+        "alt_iris": alt(f'In drydock: Iris Clew. {m["drydock_2"]["hook"]} {m["drydock_2"]["body"]}') if m.get("drydock_2") else "",
         "alt_deadkeys": alt(f'In drydock: Dead Keys. {m["drydock"]["hook"]} {m["drydock"]["body"]}'),
         "fleet_cards": cards(m["fleet"]),
         "away_cards": cards(m["away"]),

@@ -301,5 +301,15 @@
       "status": "shipped",
       "repo": "ghost-rovers"
     }
-  ]
+  ],
+  "drydock_2": {
+    "label": "IN DRYDOCK",
+    "name": "Iris Clew",
+    "status": "drydock",
+    "url": "https://dev.to/earlgreyhot1701d",
+    "hook": "Every comment deserves a reply. Iris makes sure none slip.",
+    "body": "An agent that keeps track of comments across my dev.to posts and helps reshape each piece for X, daily.dev, and AWS Builder. It asks me for what only I know and learns from my decisions. I still write every reply myself.",
+    "stack": "Kiro CLI · spec-driven · Hermes · Telegram",
+    "footer": "Building in public · repo coming soon"
+  }
 }

@@ -33,6 +33,10 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <p align="center">🟡 <a href="https://github.com/earlgreyhot1701D/dead-keys"><b>Repo</b></a> · <a href="https://github.com/earlgreyhot1701D/dead-keys/blob/main/docs/prd.md">PRD</a> · <a href="https://github.com/earlgreyhot1701D/office-keys">Office Keys, its predecessor</a></p>
 
+<a href="https://dev.to/earlgreyhot1701d"><img src="assets/mission-iris.svg" width="100%" alt="{{alt_iris}}"></a>
+
+<p align="center">🟡 <a href="https://dev.to/earlgreyhot1701d"><b>Follow the build on dev.to</b></a> · Repo coming soon</p>
+
 <img src="assets/h-fleet.svg" width="100%" alt="05 Active Fleet (Projects)">
 
 <p align="center">
