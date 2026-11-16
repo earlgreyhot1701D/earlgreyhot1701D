@@ -29,7 +29,7 @@
    "description": "",
    "homepage": "",
    "topics": [],
-   "stars": 1,
+   "stars": 2,
    "readme_head": "<div align=\"center\">\n\n<a href=\"https://youtu.be/a_sWWLi5-Xw\"><img src=\"docs/media/demo.gif\" alt=\"Demo: the console powers on, the Laser Mirror is called and a laser beam makes the round trip from Earth, the Apollo 15 Rover photo fills the screen with a live counter, then the console switches to Mars and InSight stays silent\" width=\"100%\"></a>\n\n# Ghost Rovers\n\n**12 machines are still on the Moon and Mars. Only 1 still answers.**\n\nA 1969 Mission Control console where kids ages 8 to 12 radio the hardware NASA left behind, on the Moon and on Mars.\n\n[**Play it live**](https://earlgreyhot1701d.github.io/ghost-rovers/) · [**Watch the 27-second demo**](https://youtu.be/a_sWWLi5-Xw) · [Slides (PDF)](docs/media/ghost-rovers-slides.pdf) · [**Go to Mars**](https://earlgreyhot1701d.github.io/ghost-rovers/#mars) · [Study notebook](https://notebook.google.com/notebook/c43a9882-26f7-4223-a46c-3f5c332dd378) · [Fact check](docs/FACT_CHECK.md) · [SI disclosure](AI_DISCLOSURE.md)\n\nNASA Space Apps Challenge 2026 · **Abandoned but not Forgotten** · Team **Clew Labs** (La Shara Cordero)\n\n</div>\n\n---\n\n## The problem\n\nKids hear about rockets launching. They almost never hear about what stayed behind. The facts are all in NASA's catalog, but they read like a spec sheet: COSPAR IDs, coordinates, mass budgets. Nobody tells a 9-year-old that a car has been parked on the Moon since before their grandparents had cell phones.\n\n## What Ghost Rovers does\n\nYou sit at a Mission Control console. Six machines are out there. You pick one and press **CALL GHOST**.\n\nFive stay quiet. One answers: the Apollo 11 Laser Mirror. Scientists on Earth still bounce lasers off it, and you watch the beam make the 2.5-second round trip.\n\n| The 6 ghosts | Landed | Today |\n|---|---|---|\n| Surveyor 3 | Apr 20, 1967 | Quiet since 1967 |\n| Laser Mirror | Jul 20, 1969 | **Still answers** |\n| Eagle's Launch Pad | Jul 20, 1969 | Resting since 1969 |\n| Moonquake Station | Nov 19, 1969 | Switched off 1977 |\n| Apollo 15 Rover | Jul 30, 1971 | Parked since 1971 |\n| Apollo 17 Rover | Dec 11, 1972 | Parked since 1972 |\n\nThen flip the console to **MARS** (or press M). Six more machines. This time, **none of them answer. Yet.**\n\n| The 6 Mars ghosts | Landed | Today |\n|---|---|---|\n| Viking 1 Lander | Jul 20, 1976 | Quiet since 1982 |\n| Viking 2 Lander | Sep 3, 1976 | Batteries failed 1980 |\n| Sojourner Rover | Jul 4, 1997 | Quiet since 1997 |\n| Spirit Rover | Jan 4, 2004 | Quiet since 2010 |\n| Opportunity Rover | Jan 25, 2004 | Quiet since 2018 |\n| InSight Lander | Nov 26, 2018 | Last heard December 2022 |\n\nKids named some of them. A 12-year-old named Sojourner, and a third grader named Spirit and Opportunity.\n\nThese 6 are quiet for good, but Mars is not silent. Finish the Mars check and the console points you to the 2 rovers that **still answer** Earth today: Curiosity (Gale Crater, since 2012) and Perseverance (Jezero Crater, since 2021).\n\n## What a kid can do\n\n- **Spin the real Moon and Mars.** 3D globes wrapped in NASA maps (the Lunar Reconnaissance Orbiter Moon map and the Viking Mars map), with every landing site marked.\n- **Call each ghost** and get its reply, with radio static and a 1969 console sound.\n- **Read its file:** the original mission, a short story in the machine's own voice, and 3 questions kids actually ask (\"Could I drive it?\" \"What's it made of?\").\n- **See the real photo** big, in a slide viewer, credited by NASA ID.\n- **Watch the clock.** A live counter shows how long each machine has been on the Moon or Mars, down to the second.\n- **Tap READ TO ME** to hear the file read aloud.\n- **Finish all 6** on each world to earn a Junior Flight Controller badge, then keep going with a quiz, flashcards, and a mind map for that world. On Mars, the badge panel also links to Curiosity and Perseverance, the 2 rovers still answering.\n\n## Built on NASA data, checked by a human\n\n| Source | Used for |\n|---|---|\n| [NSSDCA catalog](https://nssdc.gsfc.nasa.gov/) | Every date, site, and fact. Each ghost links to its own record |\n| [NASA SVS CGI Moon Kit](https://svs.gsfc.nasa.gov/4720) | LRO color map for the 3D Moon |\n| [NASA 3D Resources: Mars](https://science.nasa.gov/3d-resources/mars/) | Viking-based color map for the 3D Mars |\n| [images.nasa.gov](https://images.nasa.gov/) | 12 photos from the Moon and Mars, resized only |\n| [NASA JPL](https://www.jpl.nasa.gov/news/the-apollo-experiment-that-keeps-on-giving/) | Laser ranging: still working, Moon drifts 3.8 cm a year |\n\nAll 12 ghosts were checked line by line against NASA's records. The check caught overclaims and fixed them. Example: \"the first car on the Moon\" became \"the first car astronauts drove on the Moon,\" because a Soviet robot rover got there first in 1970. Full logs: [Moon](docs/FACT_CHECK.md) · [Mars](docs/FACT_CHECK_MARS.md).\n\n## How it works\n\n<img src=\"docs/media/architecture.png\" alt=\"System map: index.html and js modules in the browser read data/ghosts.json and NASA assets; NASA sources feed the data; hosted on GitHub Pages\" width=\"100%\">\n\nPlain HTML, CSS, and vanilla JavaScript. No framework, no build step, no server, no login, and no data collected. Two JSON files hold every fact, one per world. Three.js draws the Moon and Mars.\n\n| File | Job |\n|---|---|\n| `index.html` | The console: clocks, side screens, curved wall screen, desk |\n| `styles/*.css` | Design tokens plus 8 layout files, one job each (base, screen, plot, console, modals, tablet-landscape, tablet-portrait, phone), and `still-answering.css` for the Mars still-answering row |\n| `js/main.js` | State, boot sequence, keys, laser show, clocks, sound, read-aloud |\n| `js/globe.js` | 3D Moon and Mars, drag to spin, FACE EARTH |\n| `js/projection.js`, `js/markers.js` | Latitude and longitude to screen pins |\n| `js/card.js` | Ghost file, answers, photo viewer, badge |\n| `js/still-answering.js` | Mars only: links to the 2 working rovers that still answer |\n| `data/ghosts.json`, `data/mars.json` | The 12 ghosts, every fact sou"
   },
   {
@@ -58,22 +58,22 @@
    "title": "Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.",
    "url": "https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
    "date": "2026-11-15",
-   "reactions": 38,
-   "comments": 11
+   "reactions": 58,
+   "comments": 16
   },
   {
    "title": "One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)",
    "url": "https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
    "date": "2026-11-13",
-   "reactions": 33,
-   "comments": 26
+   "reactions": 36,
+   "comments": 27
   },
   {
    "title": "Four Applications and One Ask. Guess Which One Scared Me.",
    "url": "https://dev.to/earlgreyhot1701d/four-applications-and-one-ask-guess-which-one-scared-me-2ia3",
    "date": "2026-11-12",
-   "reactions": 41,
-   "comments": 38
+   "reactions": 48,
+   "comments": 41
   },
   {
    "title": "A Small Laptop Is a Full Build Kit: Bootstrapping with a Chromebook, Claude, and GitHub",
