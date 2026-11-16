@@ -1,22 +1,22 @@
 {
  "dev_posts": 66,
- "dev_reactions": 1206,
+ "dev_reactions": 1217,
  "latest": [
   {
    "title": "Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.",
    "url": "https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
    "slug": "ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
    "date": "Nov 15",
-   "reactions": 30,
-   "comments": 5
+   "reactions": 38,
+   "comments": 10
   },
   {
    "title": "One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)",
    "url": "https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
    "slug": "one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
    "date": "Nov 13",
-   "reactions": 30,
-   "comments": 22
+   "reactions": 33,
+   "comments": 25
   },
   {
    "title": "Four Applications and One Ask. Guess Which One Scared Me.",
@@ -29,7 +29,7 @@
  ],
  "public_repos": 80,
  "followers": 13,
- "contrib_total": 2148,
+ "contrib_total": 2072,
  "contrib_weeks": [
   [
    1,
@@ -500,10 +500,11 @@
    2
   ],
   [
-   1
+   1,
+   0
   ]
  ],
- "fetched_at": "2026-11-15",
+ "fetched_at": "2026-11-16",
  "contrib_peak": {
   "date": "2026-05-02",
   "count": 212

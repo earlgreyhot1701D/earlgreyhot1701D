@@ -113,14 +113,15 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <a href="https://dev.to/earlgreyhot1701d/four-applications-and-one-ask-guess-which-one-scared-me-2ia3"><img src="assets/post-3.svg" width="100%" alt="DEV post: Four Applications and One Ask. Guess Which One Scared Me."></a>
 
-💎 **4 Community Gems.** Gems are DEV's human-curated picks. Trusted curators hand out a limited number each day to spotlight work they think deserves a wider audience. No algorithm, just people with taste.
+💎 **7 Community Gems.** Gems are DEV's human-curated picks. Trusted curators hand out a limited number each day to spotlight work they think deserves a wider audience. No algorithm, just people with taste.
 
 | 💎 Picked as a gem | Date |
 |---|---|
+| [Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.](https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575) | Nov 2026 |
 | [AI Took Me to Three Stages. I Still Don't Like Public Speaking.](https://dev.to/earlgreyhot1701d/ai-took-me-to-three-stages-i-still-dont-like-public-speaking-1g38) | Oct 2026 |
 | [My Agents Never Get Tired. I Do: On Satisficing](https://dev.to/earlgreyhot1701d/my-agents-never-get-tired-i-do-on-satisficing-1mb) | Sep 2026 |
 | [Block Zero: Oh, no! Claude, Kiro and I over-engineered the throwaway.](https://dev.to/earlgreyhot1701d/block-zero-oh-no-claude-kiro-and-i-over-engineered-the-throwaway-5d42) | Sep 2026 |
-| 💬 Plus one gem for a comment, because the conversation counts too | |
+| 💬 Plus 3 gems for comments, because the conversation counts too | |
 
 <p align="center">
 <a href="https://dev.to/earlgreyhot1701d"><img src="https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/badge/badge_image/452/wecoded2026-winner-badge.png" width="72" alt="2026 WeCoded Winner" title="2026 WeCoded Winner"></a>
@@ -135,9 +136,9 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors (GitHub Stats)">
 
-<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 80 public repos, 66 DEV posts, 1206 DEV reactions, 2148 contributions this year">
+<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 80 public repos, 66 DEV posts, 1217 DEV reactions, 2072 contributions this year">
 
-<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2148 in total">
+<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2072 in total">
 
 <img src="assets/h-orders.svg" width="100%" alt="10 Standing Orders (How I Work)">
 
@@ -161,4 +162,4 @@ I don't write code from scratch. I give creative direction and validation: AI to
 
 <img src="assets/footer.svg" width="100%" alt="End transmission. AI assisted. Human approved. Powered by NLP.">
 
-<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-15.</sub>
+<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-16.</sub>
