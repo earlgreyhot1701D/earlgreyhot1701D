@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add README.md assets data/live-cache.json
+          git add README.md assets data/live-cache.json data/radar.json
           if git diff --cached --quiet; then
             echo "Nothing changed."
           else

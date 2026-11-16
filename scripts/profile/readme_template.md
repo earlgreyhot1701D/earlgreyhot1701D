@@ -101,14 +101,15 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 {{transmissions}}
 
-💎 **4 Community Gems.** Gems are DEV's human-curated picks. Trusted curators hand out a limited number each day to spotlight work they think deserves a wider audience. No algorithm, just people with taste.
+💎 **7 Community Gems.** Gems are DEV's human-curated picks. Trusted curators hand out a limited number each day to spotlight work they think deserves a wider audience. No algorithm, just people with taste.
 
 | 💎 Picked as a gem | Date |
 |---|---|
+| [Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.](https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575) | Nov 2026 |
 | [AI Took Me to Three Stages. I Still Don't Like Public Speaking.](https://dev.to/earlgreyhot1701d/ai-took-me-to-three-stages-i-still-dont-like-public-speaking-1g38) | Oct 2026 |
 | [My Agents Never Get Tired. I Do: On Satisficing](https://dev.to/earlgreyhot1701d/my-agents-never-get-tired-i-do-on-satisficing-1mb) | Sep 2026 |
 | [Block Zero: Oh, no! Claude, Kiro and I over-engineered the throwaway.](https://dev.to/earlgreyhot1701d/block-zero-oh-no-claude-kiro-and-i-over-engineered-the-throwaway-5d42) | Sep 2026 |
-| 💬 Plus one gem for a comment, because the conversation counts too | |
+| 💬 Plus 3 gems for comments, because the conversation counts too | |
 
 <p align="center">
 <a href="https://dev.to/earlgreyhot1701d"><img src="https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/badge/badge_image/452/wecoded2026-winner-badge.png" width="72" alt="2026 WeCoded Winner" title="2026 WeCoded Winner"></a>

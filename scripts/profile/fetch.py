@@ -106,6 +106,39 @@ def fetch_contributions(login):
             "contrib_week_starts": [w["contributionDays"][0]["date"] for w in cal["weeks"] if w["contributionDays"]]}
 
 
+RADAR_DAYS = 10
+
+
+def fetch_radar(profile):
+    """What changed recently, with README text, so the weekly review needs no network of its own."""
+    from datetime import timedelta
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=RADAR_DAYS)).strftime("%Y-%m-%d")
+    login = profile["handle"]
+    repos = _get_json(f"https://api.github.com/users/{login}/repos?per_page=100&sort=pushed", _gh_headers())
+    out = []
+    for r in repos:
+        if r.get("fork") or r["name"].lower() == login.lower():
+            continue
+        if str(r.get("pushed_at", ""))[:10] < cutoff and str(r.get("created_at", ""))[:10] < cutoff:
+            continue
+        try:
+            req = urllib.request.Request(f"https://api.github.com/repos/{login}/{r['name']}/readme",
+                                         headers={**UA, **_gh_headers(), "Accept": "application/vnd.github.raw"})
+            with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+                readme = resp.read(6000).decode("utf-8", "replace")
+        except Exception:
+            readme = ""
+        out.append({"repo": r["name"], "created": str(r.get("created_at", ""))[:10], "pushed": str(r.get("pushed_at", ""))[:10],
+                    "description": r.get("description") or "", "homepage": r.get("homepage") or "",
+                    "topics": r.get("topics") or [], "stars": r.get("stargazers_count", 0), "readme_head": readme})
+    posts = _get_json(f"https://dev.to/api/articles?username={profile['devto_user']}&per_page=30")
+    recent = [{"title": p.get("title", ""), "url": p.get("url", ""), "date": str(p.get("published_at", ""))[:10],
+               "reactions": p.get("public_reactions_count", 0), "comments": p.get("comments_count", 0)}
+              for p in posts if str(p.get("published_at", ""))[:10] >= cutoff]
+    return {"generated": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "window_days": RADAR_DAYS,
+            "repos": out, "devto_posts": recent}
+
+
 def gather(profile, cache_path):
     """Return live data. Each source that fails keeps its last cached value."""
     try:

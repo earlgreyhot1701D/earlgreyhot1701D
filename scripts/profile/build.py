@@ -62,6 +62,11 @@ def main(mock=False):
         live = fetch.gather(profile, DATA / "live-cache.json")
         cache = {k: v for k, v in live.items() if k != "failures"}
         (DATA / "live-cache.json").write_text(json.dumps(cache, indent=1) + "\n", encoding="utf-8")
+        try:  # radar is for the weekly review only; never block the page on it
+            radar = fetch.fetch_radar(profile)
+            (DATA / "radar.json").write_text(json.dumps(radar, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        except Exception as exc:
+            print(f"[warn] radar skipped: {exc}", file=sys.stderr)
 
     ASSETS.mkdir(exist_ok=True)
     stardate = datetime.now(timezone.utc).strftime("%Y.%m")
