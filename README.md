@@ -138,7 +138,7 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors (GitHub Stats)">
 
-<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 80 public repos, 66 DEV posts, 1248 DEV reactions, 2072 contributions this year">
+<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 80 public repos, 66 DEV posts, 1293 DEV reactions, 2072 contributions this year">
 
 <img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2072 in total">
 
@@ -164,4 +164,4 @@ I don't write code from scratch. I give creative direction and validation: AI to
 
 <img src="assets/footer.svg" width="100%" alt="End transmission. AI assisted. Human approved. Powered by NLP.">
 
-<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-16.</sub>
+<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-17.</sub>

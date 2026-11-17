@@ -1,30 +1,30 @@
 {
  "dev_posts": 66,
- "dev_reactions": 1248,
+ "dev_reactions": 1293,
  "latest": [
   {
    "title": "Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.",
    "url": "https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
    "slug": "ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
    "date": "Nov 15",
-   "reactions": 58,
-   "comments": 16
+   "reactions": 65,
+   "comments": 21
   },
   {
    "title": "One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)",
    "url": "https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
    "slug": "one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
    "date": "Nov 13",
-   "reactions": 36,
-   "comments": 27
+   "reactions": 51,
+   "comments": 28
   },
   {
    "title": "Four Applications and One Ask. Guess Which One Scared Me.",
    "url": "https://dev.to/earlgreyhot1701d/four-applications-and-one-ask-guess-which-one-scared-me-2ia3",
    "slug": "four-applications-and-one-ask-guess-which-one-scared-me-2ia3",
    "date": "Nov 12",
-   "reactions": 48,
-   "comments": 41
+   "reactions": 66,
+   "comments": 45
   }
  ],
  "public_repos": 80,
@@ -501,10 +501,11 @@
   ],
   [
    1,
+   0,
    0
   ]
  ],
- "fetched_at": "2026-11-16",
+ "fetched_at": "2026-11-17",
  "contrib_peak": {
   "date": "2026-05-02",
   "count": 212
