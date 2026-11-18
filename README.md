@@ -71,7 +71,7 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 | [Clew Forge](https://github.com/earlgreyhot1701D/clew-forge) | Lightweight framework for shipping fast without losing clarity | 🔵 |
 | [Propina](https://github.com/earlgreyhot1701D/propina) | USD/MXN tip calculator. One prompt, eight minutes, live | 🟢 [Live](https://earlgreyhot1701d.github.io/propina/) |
 | [4 GB and a Dream](https://github.com/earlgreyhot1701D/4gb-and-a-dream) | How far can a 4 GB Chromebook go? Four builds, nothing installed, every commit pushed from the chat | 🟢 [Live](https://earlgreyhot1701d.github.io/4gb-and-a-dream/) |
-| [Necesito](https://github.com/earlgreyhot1701D/necesito) 🍵 | My wife was sick on vacation, so I built her a bilingual papel picado page. One tap texts me what she needs | 🟢 [Live](https://earlgreyhot1701d.github.io/necesito/) |
+| [Necesito](https://github.com/earlgreyhot1701D/necesito) 🍵 | My wife was sick on vacation, so I built her a bilingual papel picado page. One tap texts me what she needs. [Its story](https://dev.to/earlgreyhot1701d/a-builder-in-cdmx-flu-edition-167) made DEV's Top 7 | 🟢 [Live](https://earlgreyhot1701d.github.io/necesito/) |
 | [Steep](https://github.com/earlgreyhot1701D/steep) 🫖 | Tea leaf reading for your repo. DEV April Fools 2026, Best Use of Google AI | 🔵 |
 | [Office Keys](https://github.com/earlgreyhot1701D/office-keys) | Gamified typing practice for workforce digital literacy | 🔵 |
 | [Sprint-Kit](https://github.com/earlgreyhot1701D/Sprint-Kit) | PM skills for middle schoolers. Zero data collection | 🔵 |
@@ -105,7 +105,7 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-commendations.svg" width="100%" alt="07 Commendations (Awards and Talks)">
 
-<img src="assets/commendations.svg" width="100%" alt="Commendations: DoraHacks AWS Global Vibe Hackathon (2025): Winner · Draper U scholarship (Janus Clew); AI Vibe Coding Hackathon (2026): Featherless 1st + ElevenLabs Best · 4th of 250; DEV WeCoded Challenge (2026): Winner; DEV April Fools Challenge (2026): Best Use of Google AI (Steep); AWS 10,000 AIdeas (2026): Semi-Finalist (Clew Directive); CCC AI Summer Camp, Cal Poly DxHub/AWS (2025): 2nd of 14 · 1 of 100 from 1,300; NACM 2026 Midyear Conference (2026): Building Bridges: Enabling Staff Innovation; Los Angeles Superior Court (2026): Invited: AI adoption for court staff">
+<img src="assets/commendations.svg" width="100%" alt="Commendations: DoraHacks AWS Global Vibe Hackathon (2025): Winner · Draper U scholarship (Janus Clew); AI Vibe Coding Hackathon (2026): Featherless 1st + ElevenLabs Best · 4th of 250; DEV WeCoded Challenge (2026): Winner; DEV April Fools Challenge (2026): Best Use of Google AI (Steep); DEV Top 7 Featured Posts (2026): A Builder in CDMX: Flu Edition (Nov 17); AWS 10,000 AIdeas (2026): Semi-Finalist (Clew Directive); CCC AI Summer Camp, Cal Poly DxHub/AWS (2025): 2nd of 14 · 1 of 100 from 1,300; NACM 2026 Midyear Conference (2026): Building Bridges: Enabling Staff Innovation; Los Angeles Superior Court (2026): Invited: AI adoption for court staff">
 
 <img src="assets/h-transmissions.svg" width="100%" alt="08 Transmissions from DEV (Writing)">
 
@@ -138,9 +138,9 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors (GitHub Stats)">
 
-<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 80 public repos, 66 DEV posts, 1293 DEV reactions, 2072 contributions this year">
+<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 80 public repos, 66 DEV posts, 1295 DEV reactions, 2080 contributions this year">
 
-<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2072 in total">
+<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2080 in total">
 
 <img src="assets/h-orders.svg" width="100%" alt="10 Standing Orders (How I Work)">
 
@@ -164,4 +164,4 @@ I don't write code from scratch. I give creative direction and validation: AI to
 
 <img src="assets/footer.svg" width="100%" alt="End transmission. AI assisted. Human approved. Powered by NLP.">
 
-<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-17.</sub>
+<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-18.</sub>
