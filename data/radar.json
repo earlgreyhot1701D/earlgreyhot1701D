@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18",
+ "generated": "2026-11-19",
  "window_days": 10,
  "repos": [
   {
@@ -58,22 +58,22 @@
    "title": "Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.",
    "url": "https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
    "date": "2026-11-15",
-   "reactions": 72,
-   "comments": 24
+   "reactions": 83,
+   "comments": 40
   },
   {
    "title": "One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)",
    "url": "https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
    "date": "2026-11-13",
    "reactions": 54,
-   "comments": 33
+   "comments": 34
   },
   {
    "title": "Four Applications and One Ask. Guess Which One Scared Me.",
    "url": "https://dev.to/earlgreyhot1701d/four-applications-and-one-ask-guess-which-one-scared-me-2ia3",
    "date": "2026-11-12",
    "reactions": 66,
-   "comments": 47
+   "comments": 49
   },
   {
    "title": "A Small Laptop Is a Full Build Kit: Bootstrapping with a Chromebook, Claude, and GitHub",
@@ -81,13 +81,6 @@
    "date": "2026-11-11",
    "reactions": 26,
    "comments": 9
-  },
-  {
-   "title": "A Builder in CDMX: Flu Edition",
-   "url": "https://dev.to/earlgreyhot1701d/a-builder-in-cdmx-flu-edition-167",
-   "date": "2026-11-08",
-   "reactions": 39,
-   "comments": 20
   }
  ]
 }
