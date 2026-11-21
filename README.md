@@ -109,11 +109,11 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-transmissions.svg" width="100%" alt="08 Transmissions from DEV (Writing)">
 
-<a href="https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575"><img src="assets/post-1.svg" width="100%" alt="DEV post: Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up."></a>
+<a href="https://dev.to/earlgreyhot1701d/dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2"><img src="assets/post-1.svg" width="100%" alt="DEV post: Dead Keys: I Brought Back the Typing Games. Kiro Did the Heavy Lifting."></a>
 
-<a href="https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h"><img src="assets/post-2.svg" width="100%" alt="DEV post: One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)"></a>
+<a href="https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575"><img src="assets/post-2.svg" width="100%" alt="DEV post: Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up."></a>
 
-<a href="https://dev.to/earlgreyhot1701d/four-applications-and-one-ask-guess-which-one-scared-me-2ia3"><img src="assets/post-3.svg" width="100%" alt="DEV post: Four Applications and One Ask. Guess Which One Scared Me."></a>
+<a href="https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h"><img src="assets/post-3.svg" width="100%" alt="DEV post: One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)"></a>
 
 💎 **7 Community Gems.** Gems are DEV's human-curated picks. Trusted curators hand out a limited number each day to spotlight work they think deserves a wider audience. No algorithm, just people with taste.
 
@@ -139,9 +139,9 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors (GitHub Stats)">
 
-<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 80 public repos, 66 DEV posts, 1318 DEV reactions, 2082 contributions this year">
+<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 81 public repos, 67 DEV posts, 1324 DEV reactions, 2086 contributions this year">
 
-<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2082 in total">
+<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2086 in total">
 
 <img src="assets/h-orders.svg" width="100%" alt="10 Standing Orders (How I Work)">
 
@@ -165,4 +165,4 @@ I don't write code from scratch. I give creative direction and validation: AI to
 
 <img src="assets/footer.svg" width="100%" alt="End transmission. AI assisted. Human approved. Powered by NLP.">
 
-<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-20.</sub>
+<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-21.</sub>

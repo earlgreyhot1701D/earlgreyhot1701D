@@ -1,11 +1,21 @@
 {
- "generated": "2026-11-20",
+ "generated": "2026-11-21",
  "window_days": 10,
  "repos": [
   {
+   "repo": "ponytail-spell-it",
+   "created": "2026-11-21",
+   "pushed": "2026-11-21",
+   "description": "Same PRD, built with and without the Ponytail ruleset, compared against my original",
+   "homepage": "",
+   "topics": [],
+   "stars": 0,
+   "readme_head": "# Ponytail x Spell It\n\n**Same PRD. Same model. Same prompt. One build with the [Ponytail](https://github.com/DietrichGebert/ponytail) ruleset off, one with it on, both compared against the version I built by hand last summer.**\n\nShort version: Ponytail made the app about half the size, a little cheaper and faster, with no must-fix bugs. It also took out the parts I liked.\n\n---\n\n## The problem\n\nAI coding agents tend to build more than you asked for. Extra abstractions, extra files, a library where the browser already has the feature. The code works, but it's bigger than it needs to be, and bigger code is harder to read, review, and trust.\n\n[Ponytail](https://github.com/DietrichGebert/ponytail) is an open source ruleset that tries to fix that. It tells the agent to act like \"the laziest senior dev in the room\" and climb a ladder before writing anything:\n\n1. Does this need to exist?\n2. Is it already in this codebase?\n3. Does the standard library handle it?\n4. Is there a native platform feature?\n5. Is there an installed dependency?\n6. Can it be one line?\n7. Only then, the minimum code that works, plus one small test if the logic is non-trivial.\n\nIts own benchmark reports about 53% less code, 41% less time, and 26% lower cost. I wanted to see what that looks like on one small app of mine, and what it costs in ways a line count doesn't show.\n\n## How this tests it\n\nI picked **Spell It**, one of my [Hot AR Summer 2026](https://github.com/earlgreyhot1701D/hot-ar-summer-2026) daily builds. You type a word and it builds that word out of periodic table symbols, like `Ba · Na · Na` for banana. Letters no element covers get flagged.\n\nIt's a good test case because it has:\n\n- **Real logic.** Finding the spelling that places the most letters is a small search problem, so Ponytail's \"add a test\" rule has something to bite on.\n- **Room to over-build.** A solver framework, a dictionary API, settings, history.\n- **A finished original to compare against.** I already built it by hand, with a deliberate design.\n\nThen I wrote one [PRD](PRD.md) from the original's behavior, with MUST, STUB, and NEVER labels, acceptance checks, and the original's visual theme. Both builds got that PRD and nothing else.\n\n## See it\n\nAll three run the same demo: type \"banana\", click \"periodic\", type \"jazz\".\n\n### Original (built by hand, summer 2026)\n\n![Original build](gifs/spell-it-original.gif)\n\n### A: Claude Code, Ponytail off\n\n![Build A, Ponytail off](gifs/spell-it-a-ponytail-off.gif)\n\n### B: Claude Code, Ponytail full\n\n![Build B, Ponytail full](gifs/spell-it-b-ponytail-full.gif)\n\n## The setup\n\n| | Original | A | B |\n|---|---|---|---|\n| Built by | Me, summer 2026 | Claude Code (desktop) | Claude Code (desktop) |\n| Model | n/a | Opus 5.5 | Opus 5.5 |\n| Ponytail | n/a | `/ponytail off` | `/ponytail full` |\n| Input | n/a | [PRD.md](PRD.md) + one prompt | [PRD.md](PRD.md) + one prompt |\n| Folder | `spell-it-original/` | `spell-it-a/` | `spell-it-b/` |\n\nEach build ran in a fresh session, in an empty folder holding only the PRD, with no personal rules files (`CLAUDE.md` or `AGENTS.md`). Both got this exact prompt:\n\n```\nBuild the app described in PRD.md. Put it in one index.html in this folder. When you're done, tell me how to check it against the acceptance checks.\n```\n\nI didn't help with code. I was ready to send a one-line follow-up for any failed check, but neither build needed one.\n\n## Results\n\n### Size\n\n| | Original | A: off | B: full |\n|---|---|---|---|\n| JavaScript lines (logic) | 319 | 151 | 109 |\n| CSS lines (the look) | 595 | 227 | 61 |\n| **Total lines** | **989** | **416** | **206** |\n| Files | 1 | 1 | 1 |\n| Dependencies | 0 | 0 | 0 |\n\n### Does it work?\n\n| | Original | A: off | B: full |\n|---|---|---|---|\n| Acceptance checks | 9 of 9 | 8 of 9 | 9 of 9 |\n| MUST features | 13 of 13 | 13 of 13 | 13 of 13 |\n| NEVER rules kept | 5 of 5 | 5 of 5 | 5 of 5 |\n| STUBs left as comments, not code | n/a | 2 of 2 | 2 of 2 |\n| Self-tests written | 0 | 7 | 8 |\n\nThe one failed check: pasting a 10,200-letter word froze Build A for 1.1 to 1.8 seconds per keystroke. Build B paused for about 0.3 seconds. The original caps input at 80 letters, so it never gets that long.\n\n### Cost and time\n\n| | A: off | B: full |\n|---|---|---|\n| Build cost | $0.85 | $0.73 |\n| Build time | 1m 49s | 1m 29s |\n| Follow-up prompts | 0 | 0 |\n| Review + audit cost | $0.33 | $0.32 |\n\nRunning the whole experiment, including all three audits, cost about **$2.65**.\n\n### Compared with Ponytail's own benchmark\n\n| | Ponytail's benchmark | This test (B vs A) |\n|---|---|---|\n| Less code | about 53% | about 50% (206 vs 416 lines) |\n| Less time | about 41% | about 18% (20 seconds) |\n| Lower cost | about 26% | about 14% (12 cents) |\n\nThe code savings matched their claim. Time and cost savings were real but smaller on an app this size.\n\n### What the Ponytail audits found\n\n| | Original | A: off | B: full |\n|---|---|---|---|\n| Must-fix | 1 | 1 | 0 |\n| Should-fix | 4 | 1 | 2 |\n| Nice to have | 2 | 3 | 3 |\n| **Total** | **7** | **5** | **5** |\n\n- **Original:** a leftover placeholder for the social share image.\n- **A:** the long-paste freeze.\n- **All three:** screen readers read too much on every keystroke. That one is on my PRD, not on any builder.\n\nFull output is in [audits/](audits).\n\n### My gut score (would I ship it as is?)\n\n| Original | A: off | B: full |\n|---|---|---|\n| 5 | 4 | 4 |\n\nAll three work the same. The original wins on detail: the background, the frame, the big title. A and B are one-shots that would need small UI tweaks.\n\n## What I learned\n\n1. **Ponytail does what it says.** Half the code of the plain build, same behavior, and the only build with no must-fix bugs.\n2. **Most of the cut came from the design.** B has about a tenth of the original's styling. \"Write less code\" quietly became \"make it plainer,\" and I scored the plain ones lower. Lean code and good design are different goals.\n3. **A good PRD did a lot of the work.** The plain build was already less than half t"
+  },
+  {
    "repo": "readme-clew-2",
    "created": "2026-10-08",
-   "pushed": "2026-11-18",
+   "pushed": "2026-11-21",
    "description": "Checks whether your README matches your code. Chrome extension + web page for any public JS/TS repo. Rules and five deterministic verifiers decide what's true, Jev labels README lines with calibrated confidence, Haiku explains the findings. Line-linked receipts, status badge, JSON export. Built with AdaL for What Would Jev Do?",
    "homepage": "https://readme-clew-2.vercel.app",
    "topics": [],
@@ -45,11 +55,18 @@
  ],
  "devto_posts": [
   {
+   "title": "Dead Keys: I Brought Back the Typing Games. Kiro Did the Heavy Lifting.",
+   "url": "https://dev.to/earlgreyhot1701d/dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2",
+   "date": "2026-11-21",
+   "reactions": 6,
+   "comments": 0
+  },
+  {
    "title": "Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.",
    "url": "https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
    "date": "2026-11-15",
    "reactions": 84,
-   "comments": 44
+   "comments": 45
   },
   {
    "title": "One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)",
