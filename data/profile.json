@@ -220,7 +220,8 @@
     "ai-took-me-to-three-stages-i-still-dont-like-public-speaking-1g38",
     "my-agents-never-get-tired-i-do-on-satisficing-1mb",
     "block-zero-oh-no-claude-kiro-and-i-over-engineered-the-throwaway-5d42",
-    "ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575"
+    "ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
+    "dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2"
   ],
   "worlds_note": "Planets on the star chart. Easiest way to add one: give the repo the GitHub topic 'world' (or 'building' while in progress). Entries here override topics: use them to rename a planet or change its date.",
   "worlds": [
