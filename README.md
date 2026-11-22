@@ -115,7 +115,7 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <a href="https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h"><img src="assets/post-3.svg" width="100%" alt="DEV post: One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)"></a>
 
-💎 **7 Community Gems.** Gems are DEV's human-curated picks. Trusted curators hand out a limited number each day to spotlight work they think deserves a wider audience. No algorithm, just people with taste.
+💎 **8 Community Gems.** Gems are DEV's human-curated picks. Trusted curators hand out a limited number each day to spotlight work they think deserves a wider audience. No algorithm, just people with taste.
 
 | 💎 Picked as a gem | Date |
 |---|---|
@@ -130,6 +130,7 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 <a href="https://dev.to/earlgreyhot1701d"><img src="https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/badge/badge_image/458/badges-best-googleai.png" width="72" alt="April Fools Best Use of Google AI" title="April Fools Best Use of Google AI"></a>
 <a href="https://dev.to/earlgreyhot1701d"><img src="https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/badge/badge_image/1/PNGBadge-011222.png" width="72" alt="Top 7" title="Top 7"></a>
 <a href="https://dev.to/earlgreyhot1701d"><img src="https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/badge/badge_image/16/js-badge.png" width="72" alt="JavaScript: top author of the week" title="JavaScript: top author of the week"></a>
+<a href="https://dev.to/earlgreyhot1701d"><img src="https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/badge/badge_image/482/New_Project__6_.webp" width="72" alt="Community Gems: 8 milestone" title="Community Gems: 8 milestone"></a>
 <a href="https://dev.to/earlgreyhot1701d"><img src="https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/badge/badge_image/481/New_Project__5_.webp" width="72" alt="Community Gems: 4 milestone" title="Community Gems: 4 milestone"></a>
 <a href="https://dev.to/earlgreyhot1701d"><img src="https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/badge/badge_image/480/New_Project__4_.webp" width="72" alt="Community Gems: 2 milestone" title="Community Gems: 2 milestone"></a>
 <a href="https://dev.to/earlgreyhot1701d"><img src="https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/badge/badge_image/278/Community_Wellness_Streak_Badge-06.png" width="72" alt="24 Week Community Wellness Streak" title="24 Week Community Wellness Streak"></a>
@@ -139,9 +140,9 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors (GitHub Stats)">
 
-<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 81 public repos, 67 DEV posts, 1324 DEV reactions, 2086 contributions this year">
+<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 81 public repos, 67 DEV posts, 1350 DEV reactions, 2088 contributions this year">
 
-<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2086 in total">
+<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2088 in total">
 
 <img src="assets/h-orders.svg" width="100%" alt="10 Standing Orders (How I Work)">
 
@@ -165,4 +166,4 @@ I don't write code from scratch. I give creative direction and validation: AI to
 
 <img src="assets/footer.svg" width="100%" alt="End transmission. AI assisted. Human approved. Powered by NLP.">
 
-<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-21.</sub>
+<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-22.</sub>
