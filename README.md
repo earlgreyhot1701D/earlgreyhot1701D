@@ -31,7 +31,7 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <a href="https://github.com/earlgreyhot1701D/dead-keys"><img src="assets/mission-deadkeys.svg" width="100%" alt="In drydock: Dead Keys. A typing game, back from the dead. In 2000, almost half of US high school grads took a typing class. By 2019 it was 2.5%. Dead Keys rebuilds the 1980s typing games I grew up on as a trainer that notices which keys you miss and drills them. It picks up where Office Keys left off."></a>
 
-<p align="center">🟡 <a href="https://github.com/earlgreyhot1701D/dead-keys"><b>Repo</b></a> · <a href="https://github.com/earlgreyhot1701D/dead-keys/blob/main/docs/prd.md">PRD</a> · <a href="https://github.com/earlgreyhot1701D/office-keys">Office Keys, its predecessor</a></p>
+<p align="center">🟡 <a href="https://dead-keys.vercel.app"><b>Play it</b></a> · <a href="https://github.com/earlgreyhot1701D/dead-keys"><b>Repo</b></a> · <a href="https://github.com/earlgreyhot1701D/dead-keys/blob/main/docs/prd.md">PRD</a> · <a href="https://dev.to/earlgreyhot1701d/dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2">The story</a> · <a href="https://github.com/earlgreyhot1701D/office-keys">Office Keys, its predecessor</a></p>
 
 <a href="https://dev.to/earlgreyhot1701d"><img src="assets/mission-iris.svg" width="100%" alt="In drydock: Iris Clew. Every comment deserves a reply. Iris makes sure none slip. An agent that keeps track of comments across my dev.to posts and helps reshape each piece for X, daily.dev, and AWS Builder. It asks me for what only I know and learns from my decisions. I still write every reply myself."></a>
 
@@ -70,6 +70,7 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 | [Vigil Crest](https://github.com/earlgreyhot1701D/vigil-crest) | Telegram correspondent that watches the DEV challenge feed | 🔵 |
 | [Clew Forge](https://github.com/earlgreyhot1701D/clew-forge) | Lightweight framework for shipping fast without losing clarity | 🔵 |
 | [Propina](https://github.com/earlgreyhot1701D/propina) | USD/MXN tip calculator. One prompt, eight minutes, live | 🟢 [Live](https://earlgreyhot1701d.github.io/propina/) |
+| [Ponytail x Spell It](https://github.com/earlgreyhot1701D/ponytail-spell-it) | Same PRD, same model, one build with the Ponytail ruleset off and one on. Half the lines. It also took out the parts I liked | 🔵 |
 | [4 GB and a Dream](https://github.com/earlgreyhot1701D/4gb-and-a-dream) | How far can a 4 GB Chromebook go? Four builds, nothing installed, every commit pushed from the chat | 🟢 [Live](https://earlgreyhot1701d.github.io/4gb-and-a-dream/) |
 | [Necesito](https://github.com/earlgreyhot1701D/necesito) 🍵 | My wife was sick on vacation, so I built her a bilingual papel picado page. One tap texts me what she needs. [Its story](https://dev.to/earlgreyhot1701d/a-builder-in-cdmx-flu-edition-167) made DEV's Top 7 | 🟢 [Live](https://earlgreyhot1701d.github.io/necesito/) |
 | [Steep](https://github.com/earlgreyhot1701D/steep) 🫖 | Tea leaf reading for your repo. DEV April Fools 2026, Best Use of Google AI | 🔵 |
@@ -141,9 +142,9 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors (GitHub Stats)">
 
-<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 81 public repos, 67 DEV posts, 1350 DEV reactions, 2099 contributions this year">
+<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 81 public repos, 67 DEV posts, 1357 DEV reactions, 2114 contributions this year">
 
-<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2099 in total">
+<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2114 in total">
 
 <img src="assets/h-orders.svg" width="100%" alt="10 Standing Orders (How I Work)">
 
