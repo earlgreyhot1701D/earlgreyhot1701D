@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22",
+ "generated": "2026-11-24",
  "window_days": 10,
  "repos": [
   {
@@ -58,8 +58,8 @@
    "title": "Dead Keys: I Brought Back the Typing Games. Kiro Did the Heavy Lifting.",
    "url": "https://dev.to/earlgreyhot1701d/dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2",
    "date": "2026-11-21",
-   "reactions": 39,
-   "comments": 18
+   "reactions": 60,
+   "comments": 26
   },
   {
    "title": "Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.",
@@ -67,20 +67,6 @@
    "date": "2026-11-15",
    "reactions": 84,
    "comments": 47
-  },
-  {
-   "title": "One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)",
-   "url": "https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
-   "date": "2026-11-13",
-   "reactions": 54,
-   "comments": 34
-  },
-  {
-   "title": "Four Applications and One Ask. Guess Which One Scared Me.",
-   "url": "https://dev.to/earlgreyhot1701d/four-applications-and-one-ask-guess-which-one-scared-me-2ia3",
-   "date": "2026-11-12",
-   "reactions": 66,
-   "comments": 52
   }
  ]
 }
