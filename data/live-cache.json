@@ -1,14 +1,14 @@
 {
  "dev_posts": 67,
- "dev_reactions": 1379,
+ "dev_reactions": 1395,
  "latest": [
   {
    "title": "Dead Keys: I Brought Back the Typing Games. Kiro Did the Heavy Lifting.",
    "url": "https://dev.to/earlgreyhot1701d/dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2",
    "slug": "dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2",
    "date": "Nov 21",
-   "reactions": 60,
-   "comments": 26
+   "reactions": 75,
+   "comments": 39
   },
   {
    "title": "Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.",
@@ -29,7 +29,7 @@
  ],
  "public_repos": 81,
  "followers": 13,
- "contrib_total": 2042,
+ "contrib_total": 2049,
  "contrib_weeks": [
   [
    2,
@@ -501,8 +501,8 @@
   ],
   [
    2,
-   0,
-   0
+   1,
+   1
   ]
  ],
  "fetched_at": "2026-11-24",
@@ -510,7 +510,7 @@
   "date": "2026-05-02",
   "count": 212
  },
- "contrib_longest_streak": 7,
+ "contrib_longest_streak": 8,
  "contrib_week_starts": [
   "2025-11-23",
   "2025-11-30",
