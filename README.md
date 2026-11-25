@@ -110,11 +110,11 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-transmissions.svg" width="100%" alt="08 Transmissions from DEV (Writing)">
 
-<a href="https://dev.to/earlgreyhot1701d/dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2"><img src="assets/post-1.svg" width="100%" alt="DEV post: Dead Keys: I Brought Back the Typing Games. Kiro Did the Heavy Lifting."></a>
+<a href="https://dev.to/necoz/lazy-senior-dev-mode-made-my-app-smaller-was-it-better-90i"><img src="assets/post-1.svg" width="100%" alt="DEV post: Lazy Senior Dev Mode Made My App Smaller. Was It Better?"></a>
 
-<a href="https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575"><img src="assets/post-2.svg" width="100%" alt="DEV post: Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up."></a>
+<a href="https://dev.to/earlgreyhot1701d/dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2"><img src="assets/post-2.svg" width="100%" alt="DEV post: Dead Keys: I Brought Back the Typing Games. Kiro Did the Heavy Lifting."></a>
 
-<a href="https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h"><img src="assets/post-3.svg" width="100%" alt="DEV post: One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)"></a>
+<a href="https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575"><img src="assets/post-3.svg" width="100%" alt="DEV post: Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up."></a>
 
 💎 **8 Community Gems.** Gems are DEV's human-curated picks. Trusted curators hand out a limited number each day to spotlight work they think deserves a wider audience. No algorithm, just people with taste.
 
@@ -142,9 +142,9 @@ Off duty: Supernote devotee, Lakers lifer, and certain that earl grey hot is the
 
 <img src="assets/h-sensors.svg" width="100%" alt="09 Ship's Sensors (GitHub Stats)">
 
-<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 81 public repos, 67 DEV posts, 1395 DEV reactions, 2049 contributions this year">
+<img src="assets/stats.svg" width="100%" alt="Ship&#x27;s sensors: 81 public repos, 68 DEV posts, 1472 DEV reactions, 2058 contributions this year">
 
-<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2049 in total">
+<img src="assets/starchart.svg" width="100%" alt="Star chart: one star per day of GitHub contributions over the last year, 2058 in total">
 
 <img src="assets/h-orders.svg" width="100%" alt="10 Standing Orders (How I Work)">
 
@@ -168,4 +168,4 @@ I don't write code from scratch. I give creative direction and validation: AI to
 
 <img src="assets/footer.svg" width="100%" alt="End transmission. AI assisted. Human approved. Powered by NLP.">
 
-<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-24.</sub>
+<sub>This page redraws itself daily from the DEV and GitHub APIs. Last sensor sweep: 2026-11-25.</sub>

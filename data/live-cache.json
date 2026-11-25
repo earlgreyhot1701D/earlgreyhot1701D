@@ -1,14 +1,22 @@
 {
- "dev_posts": 67,
- "dev_reactions": 1395,
+ "dev_posts": 68,
+ "dev_reactions": 1472,
  "latest": [
+  {
+   "title": "Lazy Senior Dev Mode Made My App Smaller. Was It Better?",
+   "url": "https://dev.to/necoz/lazy-senior-dev-mode-made-my-app-smaller-was-it-better-90i",
+   "slug": "lazy-senior-dev-mode-made-my-app-smaller-was-it-better-90i",
+   "date": "Nov 25",
+   "reactions": 63,
+   "comments": 8
+  },
   {
    "title": "Dead Keys: I Brought Back the Typing Games. Kiro Did the Heavy Lifting.",
    "url": "https://dev.to/earlgreyhot1701d/dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2",
    "slug": "dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2",
    "date": "Nov 21",
-   "reactions": 75,
-   "comments": 39
+   "reactions": 89,
+   "comments": 51
   },
   {
    "title": "Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.",
@@ -16,20 +24,12 @@
    "slug": "ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
    "date": "Nov 15",
    "reactions": 84,
-   "comments": 47
-  },
-  {
-   "title": "One Month After the Hackathon: Why My 4-Service App Stopped Working (and What @mansio Caught in the Verifiers)",
-   "url": "https://dev.to/earlgreyhot1701d/one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
-   "slug": "one-month-after-the-hackathon-why-my-4-service-app-stopped-working-and-what-mansio-caught-in-the-3i8h",
-   "date": "Nov 13",
-   "reactions": 54,
-   "comments": 34
+   "comments": 48
   }
  ],
  "public_repos": 81,
- "followers": 13,
- "contrib_total": 2049,
+ "followers": 15,
+ "contrib_total": 2058,
  "contrib_weeks": [
   [
    2,
@@ -502,10 +502,11 @@
   [
    2,
    1,
-   1
+   1,
+   0
   ]
  ],
- "fetched_at": "2026-11-24",
+ "fetched_at": "2026-11-25",
  "contrib_peak": {
   "date": "2026-05-02",
   "count": 212
