@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-25",
+ "generated": "2026-11-26",
  "window_days": 10,
  "repos": [
   {
    "repo": "two-sisters-tinctures",
    "created": "2026-10-02",
-   "pushed": "2026-11-25",
+   "pushed": "2026-11-26",
    "description": "A skincare shelf tracker I built for my little sister. Paste the ingredients, type a name, or snap the label, and Gemma 4 explains what it does. Plain rules handle routine order, don't-mix warnings, and shelf life, and her shelf never leaves her phone. Built for the DEV Hacktoberfest Weekend Challenge: Build for a Friend.",
    "homepage": "https://two-sisters-tinctures.onrender.com/",
    "topics": [],
@@ -59,7 +59,7 @@
    "description": "A typing game, back from the dead. The 80s typing games MasterType and Type Attack, rebuilt as a real trainer for anyone starting or rebuilding keyboard skills. Accuracy-first lessons, a heat map of your missed keys, adaptive drills, and progress saved only in your browser. Built with Kiro for Kiroween 2026.",
    "homepage": "",
    "topics": [],
-   "stars": 0,
+   "stars": 1,
    "readme_head": "# Dead Keys\n\n*A typing game, back from the dead.*\n\n> I learned on a typewriter in middle school, and the Mac games at home helped me improve. In 2000, almost half of US high school grads took a typing class. By 2019 it was 2.5%. So I brought the games back.\n\nThe number: US high school graduates who earned keyboarding credit fell from 44.1% in 2000 to 2.5% in 2019 ([NCES, NAEP High School Transcript Study, Table 1](https://nces.ed.gov/nationsreportcard/hsts/2019_tables/2019_table1.aspx)).\n\n**Play it:** [dead-keys.vercel.app](https://dead-keys.vercel.app)\n\n![The Dead Keys title screen: after 3 idle seconds the game plays itself, typing falling words in the outer lanes.](docs/attract.gif)\n\nDead Keys rebuilds the 1980s typing games MasterType and Type Attack as a keyboard trainer that notices which keys you miss and drills them. Built with [Kiro](https://kiro.dev) for the [Kiroween Hackathon 2026](https://kiroween.devpost.com/), category Resurrection.\n\n## Two resurrections\n\n**MasterType (1981) and Type Attack (1982).** Words fall toward you, and you type them before they land. Dead Keys keeps that pressure and the arcade feel, with synthesized sound and a phosphor-terminal look. It changes what happens after the round: every key you miss is counted, and the game builds the next drill around those keys. No assets from either game are used.\n\n**Office Keys (August 2025).** My first Lovable build, a no-login typing practice app for court staff. Dead Keys keeps its ideas (no accounts, practice the keys that trip you up) and none of its code.\n\n## How to play\n\n1. Press any key on the title screen, or watch the demo play itself.\n2. Pick Play, a Daily drill, or a lesson. Choose English or Spanish words on Play.\n3. Type each word before it lands. Every key you miss is remembered.\n4. After the round, drill the keys you missed, race your own ghost, or share your card.\n\n## How we count\n\nWPM, accuracy and weak keys are explained in the game, on the **How we count** page (from the menu, or the link under your results). Short version: speed is correct characters divided by five, per minute, with pauses left out. Accuracy is right keystrokes over all keystrokes. A miss counts against the key you should have pressed. A personal best only counts at 90% accuracy or better.\n\n## Architecture\n\n```\nBrowser (static, on Vercel)                    Server (one Vercel function)\n  index.html, styles, ES modules                 api/drill.js         POST only, same origin, under 2 KB\n  engine/ (pure functions, no DOM)               api/_lib/limits.js   per-visitor limit + daily cap\n  ui/ (DOM, textContent only)        POST        api/_lib/prompt.js   weak keys in, prompt out\n  storage/ (localStorage, try/catch) ------->    api/_lib/bedrock.js  the only file that talks to AWS\n                                     <-------    api/_lib/answer.js   every word checked before it leaves\n                       { lines, source } or { error } -> built-in drill\n```\n\nThe AI writes practice lines from your weak keys with Amazon Nova Micro on Amazon Bedrock. Everything else runs in your browser, and after one visit it installs as an app and plays offline. The service worker (`public/sw.js`) never touches the AI route. If the AI is off, capped, slow or wrong, you get the built-in drill and the game carries on.\n\n**File map.** One file, one job. Source files stay under 150 lines and nothing goes over 250 (a Kiro hook checks).\n\n| Folder | Job |\n|---|---|\n| `contract/` | The data shapes both halves agree on, and the validator. Frozen after Block 3. |\n| `src/engine/` | Rounds, scoring, word timing. Pure functions, no DOM. |\n| `src/drills/`, `src/lessons/` | Built-in drills, the daily drill, lessons. |\n| `src/ghost/`, `src/attract/`, `src/specwave/` | Ghost race, the title demo, the easter egg. |\n| `src/storage/`, `src/packs/` | Local saves and settings; word packs. |\n| `src/ui/`, `src/render/`, `src/styles/` | Screens and components; the play field; CSS. |\n| `src/sound/`, `src/share/`, `src/analytics/` | Synthesized sound; the share card; page-view counting. |\n| `api/` | The AI drill route and its helpers. |\n| `packs/` | English and Spanish word packs, their sources and blocklists. |\n| `evals/` | The golden set: six weak-key profiles run through the real route. |\n| `mcp/` | An MCP server so Kiro can validate packs and run the golden set. |\n\n## Decision records\n\nShort form: context, decision, why, trade-off.\n\n| Decision | Why | Trade-off |\n|---|---|---|\n| **Contract first.** Shapes and fixtures (normal and ugly) before any screen. | Both halves build against the same thing, and a layout that survives the ugly fixtures is ready to wire. | Slower start. Changing a shape later costs a contract change. |\n| **Local-only storage.** No accounts, progress in localStorage. | Nothing to breach, nothing to sign up for. | Progress lives in one browser. Backup and import in Settings cover moving it. |\n| **Two-layer adaptive drills.** Built-in drills always work; AI drills sit on top. | The game never waits on a model. | Two drill paths to test. |\n| **Nova Micro.** Lifecycle Active when checked Nov 7, 2026. | A low-cost Bedrock text model that does the job ($0.035 per 1M input tokens, $0.14 per 1M output, PRD G3). | Other Nova models went legacy in March 2026. Micro could too; the legacy period covers judging, and the fallback covers the rest. |\n| **The model's words are checked, not trusted.** Each word must be pack letters, 2 to 12 long, a real English word (SCOWL en_US) and off the blocklist. | The model once wrote \"zizz\". Nothing it writes reaches you unless it passes. | Some good rare words get dropped too. |\n| **Vercel function over Lambda.** | One deploy for site and route. AWS is reached through Vercel OIDC, so there are no AWS keys anywhere. | Tied to Vercel's function runtime. |\n| **Vanilla JS with JSDoc.** | No framework to learn or update; types without a build step. | More DOM code by hand. |\n| **Synthesized sound.** Web Audio recipes, no audio "
   }
  ],
@@ -68,22 +68,15 @@
    "title": "Lazy Senior Dev Mode Made My App Smaller. Was It Better?",
    "url": "https://dev.to/necoz/lazy-senior-dev-mode-made-my-app-smaller-was-it-better-90i",
    "date": "2026-11-25",
-   "reactions": 63,
-   "comments": 8
+   "reactions": 77,
+   "comments": 18
   },
   {
    "title": "Dead Keys: I Brought Back the Typing Games. Kiro Did the Heavy Lifting.",
    "url": "https://dev.to/earlgreyhot1701d/dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2",
    "date": "2026-11-21",
-   "reactions": 89,
-   "comments": 51
-  },
-  {
-   "title": "Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.",
-   "url": "https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
-   "date": "2026-11-15",
-   "reactions": 84,
-   "comments": 48
+   "reactions": 104,
+   "comments": 66
   }
  ]
 }

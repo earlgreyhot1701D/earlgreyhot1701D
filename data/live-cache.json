@@ -1,35 +1,35 @@
 {
  "dev_posts": 68,
- "dev_reactions": 1472,
+ "dev_reactions": 1502,
  "latest": [
   {
    "title": "Lazy Senior Dev Mode Made My App Smaller. Was It Better?",
    "url": "https://dev.to/necoz/lazy-senior-dev-mode-made-my-app-smaller-was-it-better-90i",
    "slug": "lazy-senior-dev-mode-made-my-app-smaller-was-it-better-90i",
    "date": "Nov 25",
-   "reactions": 63,
-   "comments": 8
+   "reactions": 77,
+   "comments": 18
   },
   {
    "title": "Dead Keys: I Brought Back the Typing Games. Kiro Did the Heavy Lifting.",
    "url": "https://dev.to/earlgreyhot1701d/dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2",
    "slug": "dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2",
    "date": "Nov 21",
-   "reactions": 89,
-   "comments": 51
+   "reactions": 104,
+   "comments": 66
   },
   {
    "title": "Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.",
    "url": "https://dev.to/earlgreyhot1701d/ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
    "slug": "ghost-rovers-i-called-12-machines-nasa-left-behind-one-picked-up-2575",
    "date": "Nov 15",
-   "reactions": 84,
-   "comments": 48
+   "reactions": 85,
+   "comments": 50
   }
  ],
  "public_repos": 81,
  "followers": 15,
- "contrib_total": 2058,
+ "contrib_total": 2060,
  "contrib_weeks": [
   [
    2,
@@ -503,15 +503,16 @@
    2,
    1,
    1,
+   1,
    0
   ]
  ],
- "fetched_at": "2026-11-25",
+ "fetched_at": "2026-11-26",
  "contrib_peak": {
   "date": "2026-05-02",
   "count": 212
  },
- "contrib_longest_streak": 8,
+ "contrib_longest_streak": 9,
  "contrib_week_starts": [
   "2025-11-23",
   "2025-11-30",
