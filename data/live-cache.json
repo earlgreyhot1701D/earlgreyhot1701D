@@ -1,22 +1,22 @@
 {
  "dev_posts": 68,
- "dev_reactions": 1502,
+ "dev_reactions": 1504,
  "latest": [
   {
    "title": "Lazy Senior Dev Mode Made My App Smaller. Was It Better?",
    "url": "https://dev.to/necoz/lazy-senior-dev-mode-made-my-app-smaller-was-it-better-90i",
    "slug": "lazy-senior-dev-mode-made-my-app-smaller-was-it-better-90i",
    "date": "Nov 25",
-   "reactions": 77,
-   "comments": 18
+   "reactions": 78,
+   "comments": 19
   },
   {
    "title": "Dead Keys: I Brought Back the Typing Games. Kiro Did the Heavy Lifting.",
    "url": "https://dev.to/earlgreyhot1701d/dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2",
    "slug": "dead-keys-i-brought-back-the-typing-games-kiro-did-the-heavy-lifting-5gc2",
    "date": "Nov 21",
-   "reactions": 104,
-   "comments": 66
+   "reactions": 105,
+   "comments": 68
   },
   {
    "title": "Ghost Rovers: I Called 12 Machines NASA Left Behind. One Picked Up.",
@@ -504,10 +504,11 @@
    1,
    1,
    1,
+   0,
    0
   ]
  ],
- "fetched_at": "2026-11-26",
+ "fetched_at": "2026-11-27",
  "contrib_peak": {
   "date": "2026-05-02",
   "count": 212
